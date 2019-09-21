@@ -1,43 +1,207 @@
+/*
+
+White: #f5f5f5
+Black: #151515
+Yellow: #F0C150
+
+font-family: 'Lora', serif;
+font-family: 'Josefin Sans', sans-serif;
+
+*/
+
+
+/* ---------- ========== FULL PAGE EFFECTS ========== ---------- */
 body {
-    margin: 60px auto;
-    width: 70%;
+    background-color: #f5f5f5;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
+
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 3px;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    color: black;
 }
 
-ul.posts li {
-    list-style: none;
+
+/* ---------- ========== LANDING PAGE START ========== ---------- */
+
+#homepage {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
 }
+
+#homepageText {
+    position: absolute;
+    margin: 100px 0px 100px 100px;
+    padding: 0px;
+    width: auto;
+    height: auto;;
+    bottom: 0px;
+}
+
+/* ---------- Introduction (Left Side) ---------- */
+
+#introduction {
+    display: inline-block;
+}
+
+#name {
+    display: block;
+    margin: 20px 0;
+    padding: 0px 5px 0px 5px;
+    border-bottom: 20px solid #F0C150;
+    
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    line-height: 5px;
+}
+
+#period {
+    position: absolute;
+    padding-left: 10px;
+}
+
+#slogan {
+    display: block;
+}
+
+/* ---------- Navigation Bar ---------- */
+
+#navbar {
+    display: block;
+    margin-top: 40px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: inline;
+    float: left;
+    margin-right: 40px;
+    width: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: .7em;
+    color: #888;
+    line-height: 25px;
+    letter-spacing: 3px;
+}
+
+#navbar ul li a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: black;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#navbar ul li a:hover {
+    color: #F0C150;
+    text-decoration: none;
+}
+
+/* ---------- Abstract Shapes (Right Side) ---------- */
+
+#mainRect{
+    position: absolute;
+    margin: 70px 25px 25px 60px;
+    height: calc(100vh - 100px);
+    min-height: 300px;
+    width: calc(100% - 105px);
+    background-color: #F0C150;
+}
+
+#mainBorder {
+    position: absolute;
+    margin: 25px 25px 25px 15px;
+    height: calc(100vh - 100px);
+    min-height: 300px;
+    width: calc(100% - 100px);
+    background-color: transparent;
+    border: 15px solid #151515;
+}
+
+.innerDropShadow {
+    -moz-box-shadow: inset 0 0 20px #000000;
+    -webkit-box-shadow: inset 0 0 20px #000000;
+    box-shadow: inset 0 0 20px #000000;
+}
+
+/* ---------- Media Screen Edits ---------- */
+
+@media screen and (max-width: 1400px){
+    #navbar ul li {
+        display: block;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #homepageTextArea {
+        height: 100vh;
+    }
+    
+    #homepageText {
+        top: 0px;
+        bottom: 0px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 100px;
+        height: 315px;
+    }
+    
+    #abstractShapes {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #homepageText {
+        top: 0; bottom: 0; left: 0; right: 0;
+        margin: auto;
+        width: 290px;
+    }
+    
+    h1 {
+        font-size: 1.7em;
+    }
+    
+    h2 {
+        font-size: .8em;
+    }
+    
+    #name {
+        margin: 15px 0;
+        padding: 0px 5px 0px 5px;
+        border-bottom: 15px solid #F0C150;
+    }
+}
+
+@media screen and (max-height: 500px){
+    #homepageText {
+        margin-top: 100px;
+        top: 0px;
+        bottom: auto;
+    }
+}
+
+/* ---------- ========== LANDING PAGE END ========== ---------- */
