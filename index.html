@@ -17,7 +17,7 @@
         <!-- ---------- OTHER ---------- -->
         
         <!-- Google Font Typefaces & FontAwesome -->
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i, 400, 600i,700|Lora:700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,600i,700|Lora:700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
         
         <!-- favicon -->
@@ -28,26 +28,32 @@
 	<body>
         
 		<!-- ---------- ENTER CONTENT HERE ---------- -->
+        
+        <!-- Landing Page -->
         <header>
             <div class="row" id="homepage">
                 <div class="col-lg-7" id="homepageTextArea">
+                    
+                    <!-- Homepage Text Box -->
                     <div id="homepageText">
                         <div id="introduction">
                             <h1>Hello!<br>My name is<br></h1>
                             <h1 id="name">NICOLE LOPEZ<span id="period">.</span></h1>
                         </div>
                         <div id="slogan">
-                            <h2><em>Unfortuantely, this site is still under construction. It will be up soon.</em></h2>
+                            <h2><em>I am a <span style="font-weight: 600;">Visual and Interactive Designer</span><br>who aims to spread hapiness through design.</em></h2>
                         </div>
                         <div id="navbar">
                             <ul>
-                                <li>CHECK OUT MY <a href="#"><span style="text-decoration:line-through;">WORK</span></a></li>
-                                <li>LEARN MORE <a href="#"><span style="text-decoration:line-through;">ABOUT ME</span></a></li>
-                                <li>VIEW MY <a href="documents/NicoleLopez_Resume.pdf">RESUME</a></li>
+                                <li>CHECK OUT MY <a href="#workpage">WORK</a></li>
+                                <li>LEARN MORE <a href="#aboutpage">ABOUT ME</a></li>
+                                <li>VIEW MY <a href="documents/NicoleLopez_Resume.pdf" target=”_blank”>RESUME</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Abstract Shape Area -->
                 <div class="col-lg-5" id="abstractShapes">
                     <div class="innerDropShadow" id="mainRect"></div>
                     <div class="outerDropShadow" id="mainBorder"></div>
@@ -55,6 +61,95 @@
             </div>
         </header>
         
+        <!-- Work Page -->
+        <div class="container" id="workpage">
+            <div class="row justify-content-center">
+                
+                <!-- Portfolio Work 1 -->
+                <div class="col-lg-3 portfolioWorkArea">
+                    <a href="#">
+                        <img src="img/test.png" style="width: 100%;">
+                    </a>
+                </div>
+                
+                <!-- Portfolio Work 2 -->
+                <div class="col-lg-3 portfolioWorkArea">
+                    <a href="#">
+                        <img src="img/test.png" style="width: 100%;">
+                    </a>
+                </div>
+                
+                <!-- Portfolio Work 3 -->
+                <div class="col-lg-3 portfolioWorkArea">
+                    <a href="#">
+                        <img src="img/test.png" style="width: 100%;">
+                    </a>
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+                
+                <!-- Portfolio Work 4 -->
+                <div class="col-lg-3 portfolioWorkArea">
+                    <a href="#">
+                        <img src="img/test.png" style="width: 100%;">
+                    </a>
+                </div>
+                
+                <!-- Portfolio Work 5 -->
+                <div class="col-lg-3 portfolioWorkArea">
+                    <a href="#">
+                        <img src="img/test.png" style="width: 100%;">
+                    </a>
+                </div>
+                
+                <!-- Portfolio Work 6 -->
+                <div class="col-lg-3 portfolioWorkArea">
+                    <a href="#">
+                        <img src="img/test.png" style="width: 100%;">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- About Page -->
+        <div class="container" id="aboutpage">
+            <div class="row justify-content-center">
+                
+                <!-- Portrait of Me -->
+                <div class="col-lg-6">
+                    <img src="img/test2.png" style="width: 100%;">
+                </div>
+            </div>
+            
+            <br>
+            <br>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <p>Hi, I’m Nicole! I’m a 3rd year <a href="https://www.rit.edu/artdesign/study/new-media-design-bfa" target="_blank">New Media Design</a> student with minors in <a href="https://www.rit.edu/study/game-design-minor" target="_blank">Game Design</a> and the <a href="https://www.rit.edu/study/modern-language-japanese-minor" target="_blank">Japanese Language</a> at <a href="https://www.rit.edu/" target="_blank">Rochester Institute of Technology</a>, and I will be graduating in May 2021.
+                        <br>
+                        <br>
+                        Whether it’s logos, posters, animations, websites, applications, or games, I have a strong passion to design. My main goal is to create designs that make people happy! In other words, I want to design things that bring enjoyment to others by making things more accessible, making things more fun, and of course, making things look more beautiful.
+                        <br>
+                        <br>
+                        To be honest, I’m a little shy, but once you get to know me, I’m actually a bit of a nerd. I love playing video games and watching Japanese anime. I also enjoy singing songs in both English and Japanese, so I’m always down for a karaoke party!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    
+                    <div class="col-lg-5">©Nicole Lopez 2019</div>
+                    <div class="col-lg-7">This site is still currently under construction. For now, please enjoy these dancing Shibas that (disclaimer) I did not draw.</div>
+                    
+                </div>
+            </div>
+        </footer>
         
         <!-- ---------- SCRIPTS ---------- -->
         
@@ -62,6 +157,9 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         
         <!-- Personal JS -->
         <script type="text/javascript" src="js/main.js"></script>

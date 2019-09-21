@@ -1,6 +1,6 @@
 /*
 
-White: #f5f5f5
+White: white
 Black: #151515
 Yellow: #F0C150
 
@@ -12,9 +12,10 @@ font-family: 'Josefin Sans', sans-serif;
 
 /* ---------- ========== FULL PAGE EFFECTS ========== ---------- */
 body {
-    background-color: #f5f5f5;
+    background-color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -27,13 +28,32 @@ h1 {
 h2 {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.1em;
     letter-spacing: 1px;
     color: black;
 }
 
+p a {
+    font-weight: 400;
+    color: #F0C150;
+        
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+p a:hover {
+    color: black;
+    text-decoration: none;
+}
 
 /* ---------- ========== LANDING PAGE START ========== ---------- */
+
+header {
+    position: relative;
+}
 
 #homepage {
     margin: 0px;
@@ -125,7 +145,7 @@ h2 {
     position: absolute;
     margin: 70px 25px 25px 60px;
     height: calc(100vh - 100px);
-    min-height: 300px;
+    min-height: 350px;
     width: calc(100% - 105px);
     background-color: #F0C150;
 }
@@ -134,7 +154,7 @@ h2 {
     position: absolute;
     margin: 25px 25px 25px 15px;
     height: calc(100vh - 100px);
-    min-height: 300px;
+    min-height: 350px;
     width: calc(100% - 100px);
     background-color: transparent;
     border: 15px solid #151515;
@@ -199,9 +219,49 @@ h2 {
 @media screen and (max-height: 500px){
     #homepageText {
         margin-top: 100px;
+        margin-bottom: 100px;
         top: 0px;
         bottom: auto;
     }
 }
 
 /* ---------- ========== LANDING PAGE END ========== ---------- */
+
+
+/* ---------- ========== WORK START ========== ---------- */
+
+#workpage {
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.portfolioWorkArea {
+    height: 100%;
+    margin: 25px;
+    padding: 0px;
+    background-color: #e5e5e5;
+}
+
+/* ---------- ========== WORK END ========== ---------- */
+
+
+/* ---------- ========== ABOUT START ========== ---------- */
+
+#aboutpage {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* ---------- ========== ABOUT END ========== ---------- */
+
+
+/* ---------- ========== FOOTER START ========== ---------- */
+
+footer {
+    padding: 100px;
+    background-color: #151515;
+    color: white;
+}
+
+/* ---------- ========== FOOTER END ========== ---------- */
