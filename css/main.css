@@ -67,6 +67,10 @@ p a:hover {
     text-decoration: none;
 }
 
+.hideme {
+    opacity:0;
+}
+
 /* ---------- ========== LANDING PAGE START ========== ---------- */
 
 header {
@@ -145,11 +149,11 @@ header {
     font-weight: 700;
     color: black;
     
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #navbar ul li a:hover {
@@ -278,17 +282,61 @@ header {
     background: #151515;
     opacity: 0;
     z-index: 1;
-    
-    -moz-transition: opacity 0.5s ease-in-out 0s;
-    -ms-transition: opacity 0.5s ease-in-out 0s;
-    -o-transition: opacity 0.5s ease-in-out 0s;
-    -webkit-transition: opacity 0.5s ease-in-out 0s;
-    transition: opacity 0.5s ease-in-out 0s;
 }
 
 .work:hover .workOverlay{
     display:block;
     opacity: 1;
+}
+
+.overlayElements {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    margin: auto;
+    width: 75%;
+    height: 75%;
+}
+
+.icon {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1400px){
+    .icon {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    h3 {
+        font-size: 2em;
+    }
+    
+    h4 {
+        font-size: 1.2em;
+    }
+    
+    .icon {
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    h4 {
+        font-size: 0.8em;
+    }
+    
+    .icon {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
 }
 
 /* ---------- ========== WORK END ========== ---------- */
@@ -310,6 +358,34 @@ footer {
     padding: 100px;
     background-color: #151515;
     color: white;
+}
+
+#footerText {
+    text-align: center;
+    font-size: .8em;
+}
+
+#footerText a {
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: white;
+    
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#footerText a:hover {
+    text-decoration: none;
+    color: #F0C150;
+}
+
+@media screen and (max-width: 576px){
+    #footerText a {
+        font-size: .8em;
+    }
 }
 
 /* ---------- ========== FOOTER END ========== ---------- */
