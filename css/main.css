@@ -368,7 +368,27 @@ footer {
     font-size: .8em;
 }
 
-#footerText a {
+#footerText ul {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 55px;
+    margin-bottom: 25px;
+    padding: 0;
+    overflow: hidden;
+}
+
+#footerText li {
+    float: left;
+}
+
+#footerText li p {
+    margin: 0px 5px 0px 5px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#footerText li a {
     font-weight: 400;
     letter-spacing: 3px;
     color: white;
@@ -385,8 +405,26 @@ footer {
     color: #F0C150;
 }
 
+.linkDivide {
+    display: none;
+}
+
+@media screen and (max-width: 1300px){
+    #footerText ul {
+        margin-left: 0px;
+    }
+    
+    #footerText ul li {
+        float: none;
+    }
+    
+    .linkDivide {
+        display: contents;
+    }
+}
+
 @media screen and (max-width: 576px){
-    #footerText a {
+    #footerText li a {
         font-size: .8em;
     }
 }
