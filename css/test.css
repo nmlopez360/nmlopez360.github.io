@@ -1,0 +1,285 @@
+/*
+--- Brand Colors ---
+White: white
+Black: #222
+Yellow: #F0C150
+Dark Yellow: #AD7F0F
+
+Off-White: #eaeaea
+
+--- Brand Fonts ---
+font-family: 'Lora', serif;
+font-family: 'Josefin Sans', sans-serif;
+
+--- Linear Gradient Highlight ---
+background: linear-gradient(transparent 50%, #222 50%, #222 90%, transparent 90%);
+
+*/
+
+body {
+    margin: 0px 25px 0px 25px;
+}
+
+header {
+    margin: 25px 0px 25px 0px;
+    width: calc(100vw - 50px);
+    height: calc(100vh - 50px);
+    background-color: #eaeaea;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3.7em;
+}
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+/* ---------- HEADER SECTION ---------- */
+
+#topBar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 25px;
+    background-color: white;
+    z-index: 99;
+}
+
+header .row {
+    margin: 0px;
+}
+
+/* ---------- Color Box ---------- */
+
+#colorBox {
+    height: calc(100vh - 50px);
+    background-color: #F0C150;
+}
+
+#introTextBoxMini {
+    display: none;
+    position: absolute;
+    bottom: 150px;
+    left: 100px;
+    width: calc(100% - 100px);
+}
+
+#navbarMini {
+    position: absolute;
+    display: block;
+    left: 100px;
+    bottom: 75px;
+    z-index: 99;
+}
+
+#navbarMini ul {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbarMini ul li {
+    display: inline;
+    float: left;
+    margin-right: 40px;
+    width: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: .7em;
+    color: #AD7F0F;
+    line-height: 25px;
+    letter-spacing: 3px;
+}
+
+#navbarMini ul li a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbarMini ul li a:hover {
+    padding: 8px 8px 5px 8px;
+    color: #222;
+    background-color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+    h1 {
+        font-size: 1.8em !important;
+    }
+    
+    h2 {
+        font-size: .7em !important;
+    }
+    
+    #introTextBoxMini {
+        display: block;
+        bottom: 175px !important;
+    }
+    
+    #name {
+        border-bottom: 20px solid white !important;
+    }
+    
+    #navbarMini ul {
+        display: contents;
+    }
+    
+    #navbarMini ul li {
+        display: block;
+        float: none;
+    }
+    
+    #introBox {
+        display: none;
+    }
+}
+
+/* ---------- Intro Box ---------- */
+
+#introBox {
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+#profileImg {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: calc(100vh - 50px);
+    
+    background-image: url(/img/profileBKG_Test.png);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#introTextBox {
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+    width: calc(100% - 100px);
+}
+
+#introText {
+    position: relative;
+    display: inline-block;
+}
+
+#name {
+    display: block;
+    margin: 20px 0;
+    padding: 0px 5px 0px 5px;
+    border-bottom: 20px solid #F0C150;
+    
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    line-height: 5px;
+}
+
+#period {
+    position: absolute;
+    padding-left: 10px;
+}
+
+#slogan {
+    display: block;
+}
+
+/* ---------- Navigation Bar ---------- */
+
+#navbar {
+    position: absolute;
+    display: block;
+    left: 50px;
+    bottom: 75px;
+    z-index: 99;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: inline;
+    float: left;
+    margin-right: 40px;
+    width: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: .7em;
+    color: #666;
+    line-height: 25px;
+    letter-spacing: 3px;
+}
+
+#navbar ul li a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: black;
+    background-color: transparent;
+    
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar ul li a:hover {
+    padding: 8px 8px 5px 8px;
+    color: #F0C150;
+    background-color: #222;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 2000px){
+    h1 {
+        font-size: 3vw;
+    }
+    
+    h2 {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 1450px){
+    #introTextBox {
+        bottom: 175px;
+    }
+    
+    #navbar ul li {
+        display: block;
+        float: none;
+    }
+}
+
+/* ---------- Header Border ---------- */
+
+#headerBorder {
+    position: absolute;
+    top: 0px; bottom: 0px; left: 0px; right: 0px;
+    margin: auto;
+    width: calc(100vw - 125px);
+    height: calc(100vh - 125px);
+    border: 10px solid #222;
+}
