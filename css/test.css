@@ -18,6 +18,7 @@ background: linear-gradient(transparent 50%, #222 50%, #222 90%, transparent 90%
 
 body {
     margin: 30px;
+    overflow-x: hidden;
 }
 
 header {
@@ -190,12 +191,48 @@ h2 {
 }
 
 @media screen and (max-width: 767px){
+    body {
+        margin: 0px;
+    }
+    
     #colorBox {
-        margin-top: -60px;
-        height: calc(100vh - 60px);
+        display: none;
     }
     
     #introBox {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    #introTextBox {
+        top: 0px;
+        bottom: 0px;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 200px;
+    }
+    
+    #navbar {
+        top: 275px;
+        bottom: 0px;
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 75px;
+    }
+    
+    #headerBorder {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: .8em;
+    }
+    
+    #topBar, #bottomBar, #bottomBarStay {
         display: none;
     }
 }
@@ -251,7 +288,7 @@ h2 {
     margin-top: -60px;
     padding: 60px 30px 60px 30px;
     background-color: #eaeaea;
-    width: calc(100vw - 77px);
+    width: calc(100vw);
     height: 1000px;
     
     z-index: 9;
@@ -267,6 +304,15 @@ h2 {
     transform: rotate(-90deg);
 }
 
+@media screen and (max-width: 767px){
+    #work {
+        background-color: white;
+    }
+    
+    #work h3 {
+        color: #bbb;
+    }
+}
 
 
 /* ---------- Header Border ---------- */
