@@ -51,81 +51,6 @@ h2 {
     background-color: #F0C150;
 }
 
-#introBoxMini {
-    display: none;
-    position: absolute;
-    top: 100px;
-    bottom: 0px;
-    left: 30px;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 50px;
-    width: 400px;
-    height: 375px;
-}
-
-#introBoxMini h1 { 
-    font-size: 5.5vw;
-}
-
-#introBoxMini h2 { 
-    font-size: 2vw;
-}
-
-#introBoxMini #name {
-    border-bottom: 15px solid white;
-    line-height: 1px;
-}
-
-#navbarMini {
-    position: absolute;
-    display: block;
-    float: none;
-    left: 50px;
-    margin-top: 25px;
-    z-index: 999;
-}
-
-#navbarMini ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#navbarMini ul li {
-    display: inline;
-    float: left;
-    margin-right: 40px;
-    width: auto;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: .7em;
-    color: #AD7F0F;
-    line-height: 25px;
-    letter-spacing: 3px;
-}
-
-#navbarMini ul li a {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    color: black;
-    background-color: transparent;
-    
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-#navbarMini ul li a:hover {
-    padding: 8px 8px 5px 8px;
-    color: #222;
-    background-color: white;
-    text-decoration: none;
-}
-
-
 /* ---------- Intro Box ---------- */
 
 .content {
@@ -268,10 +193,6 @@ h2 {
     #colorBox {
         margin-top: -60px;
         height: calc(100vh - 60px);
-    }
-    
-    #introBoxMini {
-        display: block;
     }
     
     #introBox {
