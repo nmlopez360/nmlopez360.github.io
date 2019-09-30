@@ -54,7 +54,7 @@ h2 {
 #introBoxMini {
     display: none;
     position: absolute;
-    top: 0px;
+    top: 100px;
     bottom: 0px;
     left: 30px;
     margin-top: auto;
@@ -266,7 +266,8 @@ h2 {
 
 @media screen and (max-width: 767px){
     #colorBox {
-        height: calc(100vh - 45px);
+        margin-top: -60px;
+        height: calc(100vh - 60px);
     }
     
     #introBoxMini {
