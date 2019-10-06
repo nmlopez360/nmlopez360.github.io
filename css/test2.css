@@ -222,6 +222,27 @@ p a:hover {
     }
 }
 
+@media screen and (max-width: 576px){
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: .8em;
+    }
+    
+    #name {
+        margin: 20px 0;
+        padding: 0px 5px 0px 5px;
+        line-height: 0px;
+    }
+    
+    .navbar ul li {
+        font-size: .6em;
+        margin-right: 40px;
+    }
+}
+
 /* -------------------- WORK -------------------- */
 
 /* ---------- Work ---------- */
@@ -380,14 +401,17 @@ footer ul li a:hover {
 }
 
 @media screen and (max-width: 576px){
-    #footerNavMini {
-        width: 430px;
+    #footerNavMini ul {
+        width: 100%;
     }
     
-    footer ul li {
-        width: 100px;
+    #footerNavMini ul li {
+        float: none;
+        width: 100%;
+        margin-bottom: 25px;
     }
-    footer ul li a {
+    
+    #footerNavMini ul li a {
         font-size: .6em;
     }
 }
