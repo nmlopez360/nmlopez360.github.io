@@ -22,12 +22,9 @@ background: linear-gradient(transparent 50%, #222 50%, #222 90%, transparent 90%
 body {
     margin: 0px;
     padding: 0px;
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
 header {
-    width: 100vw;
     padding: 50px;
     padding-bottom: 0px;
     background-color: white;
@@ -84,18 +81,6 @@ p a:hover {
 /* -------------------- HEADER -------------------- */
 
 /* ---------- Intro Box ---------- */
-
-/*
-.content {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    margin: 0;
-    max-width: 100%;
-    width: 100vw;
-}
-*/
 
 #introBox {
     display: block;
@@ -305,7 +290,6 @@ p a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
 }
 
 /* ---------- About Me Area ---------- */
@@ -326,7 +310,6 @@ p a:hover {
 
 /* -------------------- FOOTER -------------------- */
 footer {
-    width: 100vw;
     padding: 25px;
     background-color: #222;
 }
@@ -344,10 +327,6 @@ footer {
 }
 
 /* ---------- Footer Navbar Links ---------- */
-
-footer {
-    overflow-x: hidden;
-}
 
 #footerNavMini {
     display: none;
