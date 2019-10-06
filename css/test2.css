@@ -22,6 +22,7 @@ background: linear-gradient(transparent 50%, #222 50%, #222 90%, transparent 90%
 body {
     margin: 0px;
     padding: 0px;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
