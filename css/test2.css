@@ -300,6 +300,7 @@ p a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 /* ---------- About Me Area ---------- */
