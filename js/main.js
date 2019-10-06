@@ -1,4 +1,4 @@
-// Smooth Scrolling Effect
+// ---------- Smooth Scrolling Effect ----------
 // Code from https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
 $("a[href^='#']").click(function(e) {
 	e.preventDefault();
@@ -7,11 +7,12 @@ $("a[href^='#']").click(function(e) {
 
 	$("body, html").animate({
 		scrollTop: position
-	}, 1500 /* speed */ );
+	}, 1000 /* speed */ );
 });
 
 
-// Element Fade-In on Scroll
+
+// ---------- Element Fade-In on Scroll ----------
 // Code from https://codepen.io/annalarson/pen/GesqK
 
 $(function(){  // $(document).ready shorthand
@@ -43,7 +44,43 @@ $(document).ready(function() {
 });
 
 
-// Rellax Parallax Effect
+
+// ---------- Sticky Navbar ----------
+// Code from https://codepen.io/JGallardo/pen/lJoyk
+
+var sticky = document.querySelector('.sticky');
+
+if (sticky.style.position !== 'sticky') {
+  var stickyTop = sticky.offsetTop;
+
+  document.addEventListener('scroll', function () {
+    window.scrollY >= stickyTop ?
+      sticky.classList.add('fixed') :
+      sticky.classList.remove('fixed');
+  });
+}
+
+
+
+// ---------- Sticky Navbar Space Correction ----------
+// Code by Nicole Lopez
+
+var navSpace = document.getElementById('navSpace');
+
+window.onscroll = function() {navSpaceDisplay()};
+
+function navSpaceDisplay() {
+    if(sticky.classList.contains('fixed') == false) {
+        navSpace.style.display = 'none';
+    }
+    if(sticky.classList.contains('fixed') == true) {
+        navSpace.style.display = 'block';
+    }
+}
+
+
+
+// ---------- Rellax Parallax Effect ----------
 // Code from https://codepen.io/donovanh/pen/zwdBzP
 
 (function(e,c){"function"===typeof define&&define.amd?define([],c):"object"===typeof module&&module.exports?module.exports=c():e.Rellax=c()})(this,function(){var e=function(c,l){var b=Object.create(e.prototype),g=0,k=0,d=[],p=!1,t=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.msRequestAnimationFrame||window.oRequestAnimationFrame||function(a){setTimeout(a,1E3/60)};b.options={speed:-2,center:!1};l&&Object.keys(l).forEach(function(a){b.options[a]=
