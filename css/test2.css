@@ -77,6 +77,10 @@ p a:hover {
     text-decoration: none;
 }
 
+.hideme {
+    opacity:0;
+}
+
 /* -------------------- HEADER -------------------- */
 
 /* ---------- Intro Box ---------- */
@@ -239,7 +243,7 @@ p a:hover {
     }
     
     .navbar ul li {
-        font-size: .6em;
+        font-size: .5em;
         margin-right: 40px;
     }
 }
@@ -340,6 +344,10 @@ footer {
 }
 
 /* ---------- Footer Navbar Links ---------- */
+
+footer {
+    overflow-x: hidden;
+}
 
 #footerNavMini {
     display: none;
