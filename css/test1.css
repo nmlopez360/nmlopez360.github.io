@@ -22,7 +22,8 @@ body {
 }
 
 header {
-    width: 100vw;
+    position: relative;
+    width: 100%;
     height: 100vh;
     background-color: #222;
 }
@@ -71,7 +72,7 @@ h2 {
 
 #scrollDown {
     display: block;
-    margin-top: 50px;
+    margin-top: 100px;
     left: 0px;
     right: 0px;
     margin-left: auto;
@@ -84,11 +85,11 @@ h2 {
     
     transform: rotate(45deg);
     
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: background-color 0.3s ease-in-out 0s;
+    -ms-transition: background-color 0.3s ease-in-out 0s;
+    -o-transition: background-color 0.3s ease-in-out 0s;
+    -webkit-transition: background-color 0.3s ease-in-out 0s;
+    transition: background-color 0.3s ease-in-out 0s;
 }
 
 #arrowDown {
@@ -105,11 +106,11 @@ h2 {
 
 @media screen and (max-width: 992px){
     h1 {
-        font-size: 2vw;
+        font-size: 1.3em;
     }
 
     h2 {
-        font-size: 1.6vw;
+        font-size: 1em;
     }
     
     #introTextBox {
@@ -127,6 +128,13 @@ h2 {
         left: 8px;
     }
 }
+
+@media screen and (max-height: 700px){
+    #scrollDown {
+        margin-top: 50px;
+    }
+}
+
 
 /* ---------- Navbar ---------- */
 
@@ -237,21 +245,41 @@ nav.fill ul li a:hover:after {
 
 .sticky {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     bottom: 0px !important;
 }
 
 .fixed {
     position: fixed;
+    top: 0px;
+    bottom: auto;
 }
 
 #navSpace {
-    width: 100%;
+    width: 100vw;
     height: 100px;
     display: none;
 }
 
 .navSpace {
     background-color: white;
+}
+
+@media screen and (max-width: 992px){
+    .navbar ul li {
+        width: 125px;
+        font-size: 0.8em;
+    }
+    
+    .navbar ul li a {
+        line-height: 7.5;
+    }
+}
+
+
+/* -------------------- WORK -------------------- */
+#work {
+    padding-top: 150px;
+    background-color: beige;
 }
