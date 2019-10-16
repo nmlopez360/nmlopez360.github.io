@@ -46,35 +46,36 @@ $(document).ready(function() {
 
 
 // ---------- Sticky Navbar ----------
-// Code from https://codepen.io/JGallardo/pen/lJoyk
+// Code from https://codepen.io/JGallardo/pen/lJoyk with Edits by Nicole Lopez
 
-var sticky = document.querySelector('.sticky');
+var navbar = document.querySelector('.navbar');
+var sticky = navbar.offsetTop;
 
-if (sticky.style.position !== 'sticky') {
-  var stickyTop = sticky.offsetTop;
+var header = document.querySelector('header');
+var headerOffest = header.clientHeight - window.pageYOffset;
 
-  document.addEventListener('scroll', function () {
-    window.scrollY >= stickyTop ?
-      sticky.classList.add('fixed') :
-      sticky.classList.remove('fixed');
-  });
-}
+window.onscroll = function() {
+    stickyNav()
+};
 
+$(window).resize(function(){
+    stickyNav()
+});
 
-
-// ---------- Sticky Navbar Space Correction ----------
-// Code by Nicole Lopez
-
-var navSpace = document.getElementById('navSpace');
-
-window.onscroll = function() {navSpaceDisplay()};
-
-function navSpaceDisplay() {
-    if(sticky.classList.contains('fixed') == false) {
-        navSpace.style.display = 'none';
+function stickyNav() {
+    headerOffest = header.clientHeight - window.pageYOffset;
+    sticky = navbar.offsetTop;
+    
+    // If the number of pixels that has been scrolled is greater than or equal to the distance between the top of the window and the navbar
+    // And the distance between the top of the window and the bottom of the header is less than or equal to 100 (the height of the navbar)
+    // Then add the sticky class
+    if (window.pageYOffset >= sticky && headerOffest <= 100) {
+        navbar.classList.add('sticky');
     }
-    if(sticky.classList.contains('fixed') == true) {
-        navSpace.style.display = 'block';
+    // If the distance between the top of the window and the bottom of the header is greater than 100 (If any of the header is showing)
+    // Then remove the sticky class
+    if (headerOffest > 100) {
+        navbar.classList.remove('sticky');
     }
 }
 
