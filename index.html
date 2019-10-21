@@ -4,6 +4,7 @@
         <!-- General Meta Tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="A portfolio collection of works by Nicole Lopez">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
         <!-- ---------- STYLE SHEETS ---------- -->
@@ -17,8 +18,10 @@
         <!-- ---------- OTHER ---------- -->
         
         <!-- Google Font Typefaces & FontAwesome -->
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,600i,700|Lora:700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display:400,400i,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
+        
+        <script src="https://kit.fontawesome.com/e6247fd7a2.js" crossorigin="anonymous"></script>
         
         <!-- favicon -->
         
@@ -27,169 +30,162 @@
     
 	<body>
         
-		<!-- ---------- ENTER CONTENT HERE ---------- -->
-        
-        <!-- Landing Page -->
+        <!-- ---------- Header Landing Page ---------- -->
         <header>
-            <div class="row" id="homepage">
-                <div class="col-lg-7" id="homepageTextArea">
-                    
-                    <!-- Homepage Text Box -->
-                    <div id="homepageText">
-                        <div id="introduction">
-                            <h1>Hello!<br>My name is<br></h1>
-                            <h1 id="name">NICOLE LOPEZ<span id="period">.</span></h1>
-                        </div>
-                        <div id="slogan">
-                            <h2><em>I am a <span style="font-weight: 600;">Visual and Interactive Designer</span><br>who aims to spread happiness through design.</em></h2>
-                        </div>
-                        <div id="navbar">
-                            <ul>
-                                <li>CHECK OUT MY <a href="#workpage">WORK</a></li>
-                                <li>LEARN MORE <a href="#aboutpage">ABOUT ME</a></li>
-                                <li>VIEW MY <a href="documents/NicoleLopez_Resume.pdf" target=”_blank”>RESUME</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            
+            <!-- Intro Box Container -->
                 
-                <!-- Abstract Shape Area -->
-                <div class="col-lg-5" id="abstractShapes">
-                    <div class="innerDropShadow" id="mainRect"></div>
-                    <div class="outerDropShadow" id="mainBorder"></div>
-                </div>
+            <div id="headerBoxOutline"></div>
+
+            <!-- Intro Text Box -->
+            <div id="introTextBox">
+                <h1>HELLO, MY NAME IS</h1>
+                <h1 id="name">NICOLE LOPEZ</h1>
+                <br>
+                <h2>I am a <span style="color: #F0C150"><em>Visual and Interactive Designer</em></span> who aims to spread <span style="color: #F0C150"><em>happiness</em></span> through design.</h2>
+                
+                <a href="#work">
+                    <div id="scrollDown">
+                        <span id="arrowDown"><i class="fal fa-arrow-down"></i></span>
+                    </div>
+                </a>
             </div>
+            
+            <!-- NavBar -->
+            <nav class="navbar stroke fill">
+                <ul>
+                    <li><a href="#work" class="navHover">WORKS</a></li>
+                    <li><a href="#aboutme" class="navHover">ABOUT ME</a></li>
+                    <li><a href="documents/NicoleLopez_Resume.pdf" target="_blank" class="navHover">RESUME</a></li>
+                </ul>
+            </nav>
+            
         </header>
         
-        <!-- Work Page -->
-        <div class="container" id="workpage">
-            <div class="row justify-content-center hideme">
-                
-                <!-- Portfolio Work 1 -->
-                <div class="col-lg-4 portfolioWorkArea">
-                    <a href="documents/processDecks/ProcessDeck_RITGSO.pdf" target="_blank">
-                        <div class="work">
-                            <img src="img/portfolioWorks/gso_mockup.png" style="width: 100%;">
-                            <div class="workOverlay">
-                                <div class="icon"><img src="img/portfolioWorks/gso_icon.png" style="width: 48%; margin-left: 26%;"></div>
-                                <h3>RIT GSO Branding</h3>
-                                <h4>BRANDING | LOGO</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-                <!-- Portfolio Work 2 -->
-                <div class="col-lg-4 portfolioWorkArea">
-                    <a href="documents/processDecks/ProcessDeck_IGNRedesign.pdf" target="_blank">
-                        <div class="work">
-                            <img src="img/portfolioWorks/ign_mockup.png" style="width: 100%;">
-                            <div class="workOverlay">
-                                <div class="icon"><img src="img/portfolioWorks/ign_icon.png" style="width: 48%; margin-left: 26%;"></div>
-                                <h3>IGN Page Redesign</h3>
-                                <h4>WEBSITE | MOBILE SITE | UI</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-            </div>
-            
-            <div class="row justify-content-center hideme">
-                
-                <!-- Portfolio Work 3 -->
-                <div class="col-lg-4 portfolioWorkArea">
-                    <a href="documents/processDecks/ProcessDeck_PersonalMandala.pdf" target="_blank">
-                        <div class="work">
-                            <img src="img/portfolioWorks/mandala_mockup.png" style="width: 100%;">
-                            <div class="workOverlay">
-                                <div class="icon"><img src="img/portfolioWorks/mandala_icon.png" style="width: 48%; margin-left: 26%;"></div>
-                                <h3>Personal Mandala</h3>
-                                <h4>MOTION GRAPHICS</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-                <!-- Portfolio Work 4 -->
-                <div class="col-lg-4 portfolioWorkArea">
-                    <a href="img/portfolioWorks/nintendo_mockup.png" target="_blank">
-                        <div class="work">
-                            <img src="img/portfolioWorks/nintendo_mockup.png" style="width: 100%;">
-                            <div class="workOverlay">
-                                <div class="icon"><img src="img/portfolioWorks/nintendo_icon.png" style="width: 48%; margin-left: 26%;"></div>
-                                <h3>Nintendo Switch</h3>
-                                <h4>POSTER | GRAPHIC</h4>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                
-            </div>
-            
-        </div>
         
-        <!-- About Page -->
-        <div class="container" id="aboutpage">
-            <div class="row justify-content-center hideme">
-                
-                <!-- Portrait of Me -->
-                <div class="col-lg-6">
-                    <img src="img/profile.png" style="width: 100%;">
-                </div>
-            </div>
-            
-            <br>
-            <br>
-            
-            <div class="row justify-content-center hideme">
-                <div class="col-lg-6">
-                    <p>Hi, I’m Nicole! I’m a 3rd year <a href="https://www.rit.edu/artdesign/study/new-media-design-bfa" target="_blank">New Media Design</a> student with minors in <a href="https://www.rit.edu/study/game-design-minor" target="_blank">Game Design</a> and the <a href="https://www.rit.edu/study/modern-language-japanese-minor" target="_blank">Japanese Language</a> at <a href="https://www.rit.edu/" target="_blank">Rochester Institute of Technology</a>, and I will be graduating in May 2021.
-                        <br>
-                        <br>
-                        Whether it’s logos, posters, animations, websites, applications, or games, I have a strong passion to design. My main goal is to create designs that make people happy! In other words, I want to design things that bring enjoyment to others by making things more accessible, making things more fun, and of course, making things look more beautiful.
-                        <br>
-                        <br>
-                        To be honest, I’m a little shy, but once you get to know me, I’m actually a bit of a nerd. I love playing video games and watching Japanese anime. I also enjoy singing songs in both English and Japanese, so I’m always down for a karaoke party!</p>
-                </div>
-            </div>
-        </div>
         
-        <!-- Footer -->
-        <footer>
+        <!-- ---------- Work Page ---------- -->
+        <section id="work">
             <div class="container">
+                
+                <!-- Row 1 -->
                 <div class="row justify-content-center">
                     
-                    <div class="col-lg-5" id="footerText">
-                        <ul>
-                            <li>
-                                <p>
-                                    <span style="color: #F0C150; font-weight: 700; margin-right: 5px;">|</span>
-                                    <a href="mailto:nmlopez360@gmail.com" target="_blank">EMAIL</a>
-                                    <span class="linkDivide" style="color: #F0C150; font-weight: 700;">|</span>
-                                </p>
-                            </li>
-                            
-                            <li>
-                                <p>
-                                    <span style="color: #F0C150; font-weight: 700; margin-right: 5px;">|</span>
-                                    <a href="https://rit.joinhandshake.com/users/6918240" target="_blank"> HANDSHAKE </a>
-                                    <span style="color: #F0C150; font-weight: 700;">|</span>
-                                </p>
-                            </li>
-                            
-                            <li>
-                                <p>
-                                    <span class="linkDivide" style="color: #F0C150; font-weight: 700; margin-right: 5px;">|</span>
-                                    <a href="https://www.linkedin.com/in/nmlopez360/" target="_blank"> LINKED IN</a>
-                                    <span style="color: #F0C150; font-weight: 700;">|</span>
-                                </p>
-                            </li>
-                        </ul>        
+                    <!-- Work -->
+                    <div class="col-lg-6">
                         
+                        <a href="documents/processDecks/ProcessDeck_RITGSO.pdf">
+                            <div class="workBox">
+                                <div class="workBoxImg">
+                                        <img src="img/works/gso_mockup.png" class="workImg" alt="RIT GSO">
+                                </div>
+
+                                <img src="img/works/gso_overlay.png" class="workOverlay" alt="workInfo">
+
+                            </div>
+                        </a>
+                        
+                    </div>
+                    
+                    <!-- Work -->
+                    <div class="col-lg-6">
+                        
+                        <a href="documents/processDecks/ProcessDeck_IGNRedesign.pdf">
+                            <div class="workBox">
+                                <div class="workBoxImg">
+                                        <img src="img/works/ign_mockup.png" class="workImg" alt="IGN">
+                                </div>
+
+                                <img src="img/works/ign_overlay.png" class="workOverlay" alt="workInfo">
+
+                            </div>
+                            
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+                
+                <!-- Row 2 -->
+                <div class="row justify-content-center">
+                    
+                    <!-- Work -->
+                    <div class="col-lg-6">
+                        
+                        <a href="documents/processDecks/ProcessDeck_NintendoSwitchInfographic.pdf">
+                            <div class="workBox">
+                                <div class="workBoxImg">
+                                        <img src="img/works/nintendo_mockup.png" class="workImg" alt="Mandala">
+                                </div>
+
+                                <img src="img/works/nintendo_overlay.png" class="workOverlay" alt="workInfo">
+
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Work -->
+                    <div class="col-lg-6">
+                        
+                        <a href="documents/processDecks/ProcessDeck_PersonalMandala.pdf">
+                            <div class="workBox">
+                                <div class="workBoxImg">
+                                        <img src="img/works/mandala_mockup.png" class="workImg" alt="Nintendo">
+                                </div>
+
+                                <img src="img/works/mandala_overlay.png" class="workOverlay" alt="workInfo">
+
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+        
+        <!-- ---------- About Page ---------- -->
+        <section id="aboutme">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6" id="profileImg"></div>
+                    <div class="col-lg-6" id="aboutMeArea">
+                        <h3>Who I am</h3>
+                        <p>Hi, I’m Nicole! I’m a 3rd year <a href="https://www.rit.edu/artdesign/study/new-media-design-bfa" target="_blank">New Media Design</a> student with minors in <a href="https://www.rit.edu/study/game-design-minor" target="_blank">Game Design</a> and the <a href="https://www.rit.edu/study/modern-language-japanese-minor" target="_blank">Japanese Language</a> at <a href="https://www.rit.edu/" target="_blank">Rochester Institute of Technology</a>, and I will be graduating in May 2021.</p>
+                        <br>
+                        <h3>What I do</h3>
+                        <p>Whether it’s logos, posters, animations, websites, applications, or games, I have a strong passion to design. My main goal is to create designs that make people happy! In other words, I want to design things that bring enjoyment to others by making things more accessible, making things more fun, and of course, making things look more beautiful.</p>
+                        <br>
+                        <h3>About Me</h3>
+                        <p>To be honest, I’m a little shy, but once you get to know me, I’m actually a bit of a nerd. I love playing video games and watching Japanese anime. I also enjoy singing songs in both English and Japanese, so I’m always down for a karaoke party!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center" id="footerContent">
+                    
+                    <div class="col-lg-4" id="footerNavMini">
+                        <ul>
+                            <li><a href="mailto:nmlopez360@gmail.com">Email</a></li>
+                            <li><a href="https://rit.joinhandshake.com/users/6918240" target="_blank">Handshake</a></li>
+                            <li style="margin-right: 0px;"><a href="https://www.linkedin.com/in/nmlopez360/" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-4" id="footerText">
                         <p>©Nicole Lopez 2019</p>
                     </div>
                     
+                    <div class="col-lg-4" id="footerNav">
+                        <ul>
+                            <li><a href="mailto:nmlopez360@gmail.com">Email</a></li>
+                            <li><a href="https://rit.joinhandshake.com/users/6918240" target="_blank">Handshake</a></li>
+                            <li style="margin-right: 0px;"><a href="https://www.linkedin.com/in/nmlopez360/" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
