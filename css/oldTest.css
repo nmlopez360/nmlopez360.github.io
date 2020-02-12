@@ -1,14 +1,12 @@
 /*
 --- Brand Colors ---
 White: white
-Black: #222
-Yellow: #F0C150
-Dark Yellow: #AD7F0F
-
-Off-White: #eaeaea
+Off-White: #f1f1f1
+Off-Black: #222
+Yellow: #f9c228
+Dark Yellow: #eca21d
 
 --- Brand Fonts ---
-font-family: 'Lora', serif;
 font-family: 'Josefin Sans', sans-serif;
 
 --- Box Shadow ---
@@ -18,50 +16,26 @@ box-shadow: 1px 2px 4px rgba(0, 0, 0, .5); --> x, y, blur, color
 background: linear-gradient(transparent 50%, #222 50%, #222 90%, transparent 90%);
 
 */
+@use postcss-simple-vars;
+@use postcss-nested;
+
+
 
 body {
     margin: 0px;
     padding: 0px;
-}
-
-header {
-    padding: 50px;
-    padding-bottom: 0px;
-    background-color: white;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, .3);
+    
+    font-family: 'Josefin Sans', sans-serif;
+    
+    cursor: url('/img/defaultCursor.png'), default;
 }
 
 h1 {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    font-size: 3.5em;
-}
-
-h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-    font-size: 1.3em;
-    letter-spacing: 1px;
-    color: #222;
-}
-
-h3 {
-    margin-bottom: 10px;
-    font-family: 'Lora', serif;
-    font-size: 1.7em;
-    text-align: left;
-    color: #222;
-}
-
-p {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
-}
-
-p a {
-    font-weight: 400;
-    color: #F0C150;
-        
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+    
     -moz-transition: all 0.3s ease-in-out 0s;
     -ms-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
@@ -69,187 +43,183 @@ p a {
     transition: all 0.3s ease-in-out 0s;
 }
 
-p a:hover {
-    color: black;
-    text-decoration: none;
+a {
+    cursor: url('/img/pointerCursor.png'), pointer;
 }
 
-.hideme {
-    opacity:0;
+/* ---------- NAVBAR ---------- */
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 125px;
+    background-color: rgba(255, 255, 255, .8);
+    z-index: 99;
 }
 
-/* -------------------- HEADER -------------------- */
-
-/* ---------- Intro Box ---------- */
-
-#introBox {
-    display: block;
-    height: auto;
+#logo {
+    width: 100px;
+    margin: 15px 0px 0px 25px;
 }
 
-#introText {
-    position: relative;
-    display: inline-block;
-}
-
-#name {
-    display: block;
-    margin: 20px 0;
-    padding: 0px 5px 0px 5px;
-    border-bottom: 20px solid #F0C150;
-    
-    font-family: 'Lora', serif;
-    font-weight: 700;
-    line-height: 20px;
-}
-
-#period {
+#navMenu {
     position: absolute;
-    padding-left: 10px;
+    top: 0px;
+    right: 0px;
+    margin-right: 50px;
 }
 
-#slogan {
-    margin-bottom: 25px;
+nav ul {
+    list-style: none;
+    text-align: center;
 }
-
-/* ---------- Navbar ---------- */
-
-.navbar {
-    padding-top: 35px;
-    padding-bottom: 50px;
-    z-index: 9;
+nav ul li {
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    margin: 0px -3px;
+    padding: 45px 0px;
 }
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    display: inline;
-    float: left;
-    margin-left: -15px;
-    margin-right: 75px;
-    width: auto;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: .7em;
-    color: #888;
-    line-height: 25px;
-    letter-spacing: 3px;
-}
-
-.navbar ul li a {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    color: black;
-    background-color: transparent;
-    
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.navbar ul li a:hover {
-    padding: 8px 8px 5px 8px;
-    color: #F0C150;
-    background-color: #222;
+nav ul li a {
+    display: block;
     text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #222;
+    
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
 }
 
-.sticky {
-    position: sticky;
+/* SHIFT */
+nav.shift ul li a {
+    position:relative;
+    z-index: 1;
+}
+nav.shift ul li a:hover {
+    text-decoration: none;
+    color: #222;
+}
+nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 1px;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #f9c228;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* ---------- HEADER ---------- */
+header {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100px;
-    background-color: white;
-    text-align: center;
+    height: 100vh;
+    min-height: 650px;
+    max-height: 1000px;
+    padding-top: 125px;
 }
 
-.fixed {
-    position: fixed;
-    padding: 0px 0px 0px 66px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, .3);
+#yellowSquare {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 60px auto 0px auto;
+    margin: 60px auto 0px auto;
+    width: 200px;
+    height: 200px;
+    background-color: #f9c228;
+    transform: rotate(45deg);
+    border: 6px solid white;
+    outline: 3px solid #f9c228;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
-#navSpace {
-    width: 100%;
-    height: 100px;
-    display: none;
+#nicoleCara {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 70px auto 0px auto;
+    width: 200px;
+    cursor: url('/img/pointerCursor.png'), pointer;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
-.navSpace {
-    background-color: white;
+.active {
+    animation-name: rotate; 
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-@media screen and (max-width: 992px){
+@keyframes rotate {
+    from {transform: rotate(45deg);}
+    to {transform: rotate(405deg);}
+}
+
+
+
+@media screen and (max-width: 992px) {
     h1 {
-        font-size: 2.5em;
+        font-size: 1.9em;
     }
-    
-    h2 {
-        font-size: 1em;
+    #nicoleCara {
+        width: 150px
     }
-    
-    #name {
-        margin: 20px 0;
-        padding: 0px 5px 0px 5px;
-        line-height: 0px;
-    }
-    
-    .navbar ul li {
-        font-size: .6em;
+    #yellowSquare {
+        width: 150px;
+        height: 150px;
     }
 }
 
-@media screen and (max-width: 767px){
-    .hideNavText {
-        display: none;
-    }
-}
 
-@media screen and (max-width: 576px){
-    h1 {
-        font-size: 2em;
-    }
-    
-    h2 {
-        font-size: .8em;
-    }
-    
-    #name {
-        margin: 20px 0;
-        padding: 0px 5px 0px 5px;
-        line-height: 0px;
-    }
-    
-    .navbar ul li {
-        font-size: .5em;
-        margin-right: 40px;
-    }
-}
 
-/* -------------------- WORK -------------------- */
-
-/* ---------- Work ---------- */
-
-#work {
-    padding-top: 150px;
+/* ---------- WORK ---------- */
+.portfolioWork {
+    padding: 20px;
 }
 
 .workBox {
-    margin-bottom: 30px;
-    padding: 10px;
-    border-radius: 3px;
+    padding: 15px 0px;
 }
 
 .workBoxImg {
-    border-radius: 3px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, .5);
     overflow: hidden;
 }
 
@@ -263,144 +233,42 @@ p a:hover {
     transition: all 0.3s ease-in-out;
 }
 
-.workBoxImg:hover .workImg {
+.workBox:hover .workImg {
     transform: scale(1.2);
 }
 
-.workIcon {
+.workOverlay {
     position: absolute;
-    top: 10px;
-    left: 25px;
-    width: calc(100% - 50px);
-    border-radius: 3px;
-}
-
-
-/* -------------------- ABOUT ME -------------------- */
-
-#aboutme {
-    padding-top: 100px;
-}
-
-
-/* ---------- Profile Img ---------- */
-
-#profileImg {
-    background-image: url(/img/profile.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* ---------- About Me Area ---------- */
-#aboutMeArea {
-    padding: 50px 75px 50px 50px;
-}
-
-@media screen and (max-width: 992px){
-    #profileImg {
-        height: 100vh;
-        min-height: 200px;
-        max-height: 700px;
-    }
-    #aboutMeArea {
-        padding: 50px;
-    }
-}
-
-/* -------------------- FOOTER -------------------- */
-footer {
-    padding: 25px;
-    background-color: #222;
-}
-
-#footerContent {
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-/* ---------- Copyright Text ---------- */
-
-#footerText {
-    text-align: left;
-    color: white;
-}
-
-/* ---------- Footer Navbar Links ---------- */
-
-#footerNavMini {
-    display: none;
-}
-
-#footerNav {
-    display: block;
-}
-
-footer ul {
-    list-style-type: none;
-    width: 460px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-footer ul li {
-    float: left;
-    width: 120px;
-    border: 2px solid #F0C150;
-    text-align: center;
-    margin-right: 50px;
-}
-
-footer ul li a {
-    display: block;
-    padding: 10px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: .8em;
-    color: #F0C150;
+    top: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    opacity: 0;
     
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
-footer ul li a:hover {
-    text-decoration: none;
-    background-color: #F0C150;
-    color: #222;
+.workBox:hover .workOverlay {
+    opacity: 1;
+    z-index: 3;
 }
 
-@media screen and (max-width: 992px){
-    #footerText {
-        text-align: center;
-    }
-    
-    #footerNavMini {
-        display: block;
-        margin-bottom: 20px;
-        align-content: center;
-        width: 490px;
-    }
-    
-    #footerNav {
-        display: none;
-    }
-}
 
-@media screen and (max-width: 576px){
-    #footerNavMini ul {
-        width: 100%;
-    }
-    
-    #footerNavMini ul li {
-        float: none;
-        width: 100%;
-        margin-bottom: 25px;
-    }
-    
-    #footerNavMini ul li a {
-        font-size: .6em;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
