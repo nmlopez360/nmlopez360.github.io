@@ -103,7 +103,7 @@ nav {
 #langMenu {
     position: fixed;
     top: 50px;
-    right: 50px;
+    right: 60px;
 }
 
 #langMenu ul {
@@ -113,6 +113,7 @@ nav {
 
 #langMenu ul li {
     display: inline-block;
+    margin-left: 10px;
     font-size: .8em;
     font-weight: 600;
     color: #222;
@@ -144,9 +145,113 @@ nav {
     color: #f9c228;
 }
 
-@media screen and (max-width: 992px){
-    
+#hamburgerMenuIcon {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    display: none;
 }
+
+
+/* ---------- HAMBURGER MENU OVERLAY ---------- */
+
+.showDiv {
+    display: inline-block !important;
+}
+
+.noScroll {
+    overflow-y: hidden !important;
+}
+
+.iconRight {
+    right: 40px !important;
+}
+
+#hamburgerMenu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    overflow: hidden;
+    z-index: 99;
+    display: none;
+}
+
+#hamburgerMenu #navMenu2 ul {
+    list-style-type: none;
+    margin: 25vh auto 0 auto;
+    padding: 0;
+    width: 200px;
+}
+
+#hamburgerMenu #navMenu2 ul li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5em;
+    color: #f9c228;
+    
+    -moz-transition: color 0.5s ease-in-out 0s;
+    -ms-transition: color 0.5s ease-in-out 0s;
+    -o-transition: color 0.5s ease-in-out 0s;
+    -webkit-transition: color 0.5s ease-in-out 0s;
+    transition: color 0.5s ease-in-out 0s;
+}
+
+#hamburgerMenu #navMenu2 ul li a:hover {
+    color: #fff;
+}
+
+#hamburgerMenu #langMenu2 {
+    position: fixed;
+    left: -50px;
+    right: 0px;
+    margin: 0 auto;
+    bottom: 50px;
+}
+
+#hamburgerMenu #langMenu2 ul {
+    list-style: none;
+    text-align: center;
+}
+
+#hamburgerMenu #langMenu2 ul li {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: .8em;
+    font-weight: 600;
+    color: #f9c228;
+}
+
+#hamburgerMenu #langMenu2 ul li:nth-child(1), #langMenu2 ul li:nth-child(3) {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    background-color: #f9c228;
+}
+
+#hamburgerMenu #langMenu2 ul li a {
+    display: block;
+    width: 40px;
+    height: 35px;
+    color: #222;
+    line-height: 3;
+    
+    -moz-transition: color 0.5s ease-in-out 0s;
+    -ms-transition: color 0.5s ease-in-out 0s;
+    -o-transition: color 0.5s ease-in-out 0s;
+    -webkit-transition: color 0.5s ease-in-out 0s;
+    transition: color 0.5s ease-in-out 0s;
+}
+
+#hamburgerMenu #langMenu2 ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 
 /* ---------- HEADER ---------- */
 
@@ -172,12 +277,12 @@ nav {
 
 .headerInfo h1 {
     font-size: 2.5em;
-    font-weight: 300;
+    font-weight: 600;
     text-align: left;
 }
 
 #name {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 600;
     color: #f9c228;
 }
@@ -219,6 +324,7 @@ nav {
     
     #langMenu {
         top: 35px;
+        right: 40px;
     }
     
     #headerImg {
@@ -248,8 +354,17 @@ nav {
 }
 
 @media screen and (max-width: 576px){
-    nav {
-        background-color: blue;
+    #navMenu {
+        display: none;
+    }
+    
+    #langMenu {
+        display: none;
+    }
+    
+    #hamburgerMenuIcon {
+        display: inline-block;
+        z-index: 999;
     }
     
     .headerInfo h1 {

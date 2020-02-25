@@ -11,11 +11,31 @@ $("a[href^='#']").click(function(e) {
 });
 
 
-// ---------- Rotate Square on Cara Hover ----------
-$(document).ready(function(){
+// ---------- Activate Hamburger Menu Icon ----------
+// Code from https://codepen.io/mjperales/pen/jqqKex
 
-    $("#nicoleCara").hover(function(){
-        $("#yellowSquare").toggleClass("active");  //Toggle the active class to the area is hovered
-    });
+$('.hamburger').click(function(e){
+    e.preventDefault();
+    $(this).toggleClass('is-active');
+});
 
+
+// ---------- Toggle Menu Extras ----------
+function showDiv() {
+    $('#hamburgerMenu').toggleClass('showDiv'); // toggle show div class on button click
+    $('body').toggleClass('noScroll');
+    $('#hamburgerMenuIcon').toggleClass('iconRight');
+}
+
+$(window).resize(function() {
+    if($(window).width() >= 576 // check for window width is greater than 576px
+       && $('#hamburgerMenu').hasClass('showDiv')
+       && $('body').hasClass('noScroll')
+       && $('#hamburgerMenuIcon').hasClass('iconRight'))
+    {
+        $('#hamburgerMenu').removeClass('showDiv');
+        $('.hamburger').removeClass('is-active');
+        $('body').removeClass('noScroll');
+        $('#hamburgerMenuIcon').removeClass('iconRight');
+    }
 });
