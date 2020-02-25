@@ -24,18 +24,16 @@ $('.hamburger').click(function(e){
 function showDiv() {
     $('#hamburgerMenu').toggleClass('showDiv'); // toggle show div class on button click
     $('body').toggleClass('noScroll');
-    $('#hamburgerMenuIcon').toggleClass('iconRight');
+    /*$('#hamburgerMenuIcon').toggleClass('iconRight');*/
 }
 
 $(window).resize(function() {
     if($(window).width() >= 576 // check for window width is greater than 576px
        && $('#hamburgerMenu').hasClass('showDiv')
-       && $('body').hasClass('noScroll')
-       && $('#hamburgerMenuIcon').hasClass('iconRight'))
+       && $('body').hasClass('noScroll'))
     {
         $('#hamburgerMenu').removeClass('showDiv');
         $('.hamburger').removeClass('is-active');
         $('body').removeClass('noScroll');
-        $('#hamburgerMenuIcon').removeClass('iconRight');
     }
 });
