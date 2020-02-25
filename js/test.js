@@ -37,3 +37,12 @@ $(window).resize(function() {
         $('body').removeClass('noScroll');
     }
 });
+
+// ---------- Toggle Menu On Link Click ----------
+$(document).ready(function() {
+    $('.hamLink').click(function() {
+        $('#hamburgerMenu').removeClass('showDiv');
+        $('.hamburger').removeClass('is-active');
+        $('body').removeClass('noScroll');
+    });
+});
