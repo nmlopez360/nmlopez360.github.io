@@ -46,3 +46,14 @@ $(document).ready(function() {
         $('body').removeClass('noScroll');
     });
 });
+
+// ---------- Navbar BackgroundColor Change ----------
+// Code from https://stackoverflow.com/questions/36246878/how-to-make-a-transparent-navbar-visible-when-scrolling
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() >= 50) {
+        $('#navBarBKG').css('background','white');
+    } else {
+        $('#navBarBKG').css('background','transparent');
+    }
+});
