@@ -1,0 +1,130 @@
+/*
+--- Brand Colors ---
+White: white
+Off-White: #f1f1f1
+Off-Black: #222
+Yellow: #f9c228
+Dark Yellow: #eca21d
+
+--- Brand Fonts ---
+font-family: 'Josefin Sans', sans-serif;
+
+--- Box Shadow ---
+box-shadow: 1px 2px 4px rgba(0, 0, 0, .5); --> x, y, blur, color
+
+--- Linear Gradient Highlight ---
+background: linear-gradient(transparent 50%, #222 50%, #222 90%, transparent 90%);
+
+*/
+
+#pdfBtn {
+    display: block;
+    margin: 50px 0px;
+    padding: 15px 15px 10px 15px;
+    background-color: #f9c228;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #222;
+    
+    -moz-transition: color 0.5s ease-in-out 0s;
+    -ms-transition: color 0.5s ease-in-out 0s;
+    -o-transition: color 0.5s ease-in-out 0s;
+    -webkit-transition: color 0.5s ease-in-out 0s;
+    transition: color 0.5s ease-in-out 0s;
+}
+
+#pdfBtn:hover {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    margin-left: -50px;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+h2 {
+    margin-left: -50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+h3 {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #f9c228;
+}
+
+.profileInfo a {
+    font-weight: 600;
+    color: #f9c228;
+    
+    -moz-transition: color 0.5s ease-in-out 0s;
+    -ms-transition: color 0.5s ease-in-out 0s;
+    -o-transition: color 0.5s ease-in-out 0s;
+    -webkit-transition: color 0.5s ease-in-out 0s;
+    transition: color 0.5s ease-in-out 0s;
+}
+
+.profileInfo a:hover {
+    text-decoration: none;
+    color: #eca21d;
+}
+
+.textDivider {
+    color: #f9c228;
+}
+
+.textGrey {
+    color: #999;
+}
+
+.yellowBar {
+    position: absolute;
+    top: 60px;
+    width: 5px;
+    height: 45px;
+    right: 0px;
+    background-color: #f9c228;
+}
+
+#yellowBar2 {
+    top: 230px !important;
+}
+
+@media screen and (max-width: 992px){
+    h1 {
+        margin-left: 5px;
+        font-size: 3em;
+    }
+    
+    h2 {
+        margin-left: 0px;
+        font-size: 1.4em;
+    }
+    
+    .skillsList {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .col-sm-1 {
+        display: none;
+    }
+    
+    h1 {
+        margin-left: 0px;
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1em;
+    }
+    
+    .skillsList {
+        margin-left: 0px;
+    }
+}
