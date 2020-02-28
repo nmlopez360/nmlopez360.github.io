@@ -120,7 +120,7 @@ nav {
 
 #langMenu {
     position: fixed;
-    top: 50px;
+    top: 45px;
     right: 60px;
 }
 
@@ -140,13 +140,13 @@ nav {
 #langMenu ul li:nth-child(1), #langMenu ul li:nth-child(3) {
     display: inline-block;
     width: 40px;
-    height: 35px;
+    height: 40px;
 }
 
 #langMenu ul li a {
     display: block;
     width: 40px;
-    height: 35px;
+    height: 40px;
     background-color: #222;
     border: 2px solid #222 !important;
     color: white;
@@ -259,13 +259,13 @@ nav {
 #hamburgerMenu #langMenu2 ul li:nth-child(1), #langMenu2 ul li:nth-child(3) {
     display: inline-block;
     width: 40px;
-    height: 35px;
+    height: 40px;
 }
 
 #hamburgerMenu #langMenu2 ul li a {
     display: block;
     width: 40px;
-    height: 35px;
+    height: 40px;
     background-color: #f9c228;
     border: 2px solid #f9c228 !important;
     color: #222;

@@ -8,6 +8,7 @@ Dark Yellow: #eca21d
 
 --- Brand Fonts ---
 font-family: 'Josefin Sans', sans-serif;
+font-family: 'Noto Sans JP', ;
 
 --- Box Shadow ---
 box-shadow: 1px 2px 4px rgba(0, 0, 0, .5); --> x, y, blur, color
@@ -21,7 +22,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: white;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Noto Sans JP', ;
 }
 
 section {
@@ -32,9 +33,9 @@ section {
 }
 
 h1 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Noto Sans JP', ;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 2.2em;
     text-align: center;
     
     -moz-transition: all 0.3s ease-in-out 0s;
@@ -101,10 +102,10 @@ nav {
 #navMenu ul li a {
     display: block;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1em;
+    font-weight: 400;
+    font-size: 1.8em;
     color: #222;
-    line-height: 4.7;
+    line-height: 2.2;
     
     -moz-transition: color 0.5s ease-in-out 0s;
     -ms-transition: color 0.5s ease-in-out 0s;
@@ -120,7 +121,7 @@ nav {
 
 #langMenu {
     position: fixed;
-    top: 50px;
+    top: 45px;
     right: 60px;
 }
 
@@ -140,13 +141,13 @@ nav {
 #langMenu ul li:nth-child(1), #langMenu ul li:nth-child(3) {
     display: inline-block;
     width: 40px;
-    height: 35px;
+    height: 40px;
 }
 
 #langMenu ul li a {
     display: block;
     width: 40px;
-    height: 35px;
+    height: 40px;
     background-color: #222;
     border: 2px solid #222 !important;
     color: white;
@@ -259,13 +260,13 @@ nav {
 #hamburgerMenu #langMenu2 ul li:nth-child(1), #langMenu2 ul li:nth-child(3) {
     display: inline-block;
     width: 40px;
-    height: 35px;
+    height: 40px;
 }
 
 #hamburgerMenu #langMenu2 ul li a {
     display: block;
     width: 40px;
-    height: 35px;
+    height: 40px;
     background-color: #f9c228;
     border: 2px solid #f9c228 !important;
     color: #222;
@@ -325,7 +326,7 @@ nav {
 }
 
 .headerInfo h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 600;
     text-align: left;
 }
@@ -338,6 +339,11 @@ nav {
 
 .headerInfo h2 {
     font-size: 1.8em;
+    font-weight: 300;
+}
+
+#tagline {
+    font-weight: 600;
 }
 
 #headerImg {
@@ -360,11 +366,11 @@ nav {
     }
     
     .headerInfo h1 {
-        font-size: 2.5em;
+        font-size: 2.2em;
     }
 
     .headerInfo h2 {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     
     #headerImg {
@@ -394,8 +400,8 @@ nav {
     }
     
     #navMenu ul li a {
-        font-size: .9em;
-        line-height: 3;
+        font-size: 1.2em;
+        line-height: 2.2;
     }
     
     #langMenu {
@@ -444,11 +450,11 @@ nav {
     }
     
     .headerInfo h1 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .headerInfo h2 {
-        font-size: .9em;
+        font-size: .8em;
     }
     
     #headerInfoBtm {
