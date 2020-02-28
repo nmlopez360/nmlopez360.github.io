@@ -24,8 +24,15 @@ background: linear-gradient(transparent 50%, #222 50%, #222 90%, transparent 90%
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #f5f5f5;
+    background-color: white;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+section {
+    position: static;
+    width 100%;
+    height: auto;
+    padding: 150px 50px 100px 50px;
 }
 
 h1 {
@@ -41,7 +48,7 @@ h1 {
     transition: all 0.3s ease-in-out 0s;
 }
 
-/* ---------- NAVBAR ---------- */
+/* ---------- ========== NAVBAR ========== ---------- */
 #navBarBKG {
     position: fixed;
     top: 0px;
@@ -168,7 +175,7 @@ nav {
 }
 
 
-/* ---------- HAMBURGER MENU OVERLAY ---------- */
+/* ---------- ========== HAMBURGER MENU OVERLAY ========== ---------- */
 
 .showDiv {
     display: inline-block !important;
@@ -268,17 +275,17 @@ nav {
 }
 
 
-/* ---------- HEADER ---------- */
+/* ---------- ========== HEADER ========== ---------- */
 
 #headerInfoTop {
     display: inline-block;
     position: relative;
     left: 0px;
-    width: 60%;
+    width: 65%;
     height: 100vh;
     min-height: 650px;
     padding: 250px 0px 0px 175px;
-    background-color: white;
+    background-color: #f5f5f5;
 }
 
 #headerInfoBtm {
@@ -286,7 +293,7 @@ nav {
     left: 0px;
     width: 100%;
     padding: 100px;
-    background-color: white;
+    background-color: #f5f5f5;
     display: none;
 }
 
@@ -318,7 +325,7 @@ nav {
     position: relative;
     float: right;
     right: 0px;
-    width: 40%;
+    width: 35%;
     height: 100vh;
     min-height: 650px;
     background-color: #f9c228;
@@ -443,12 +450,83 @@ nav {
 }
 
 
-/* ---------- WORK ---------- */
+/* ---------- ========== WORK ========== ---------- */
 
-section {
-    position: static;
-    width 100%;
-    height: 700px;
-    padding: 150px 50px 100px 50px;
+#work {
+    background-color: white;
+}
+
+.workBox {
+    margin: 0px -5px 20px -5px;
+}
+
+.workBoxImg {
+    overflow: hidden;
+}
+
+.workImg {
+    width: 100%;
+    
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.workBox:hover .workImg {
+    transform: scale(1.2);
+}
+
+.workOverlay {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: calc(100% - 20px);
+    opacity: 0;
+    
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.workBox:hover .workOverlay {
+    opacity: 1;
+    z-index: 3;
+}
+
+
+/* ---------- ========== ABOUT ME ========== ---------- */
+
+#aboutMe {
     background-color: #f5f5f5;
+}
+
+#aboutMe h3 {
+    font-weight: 600;
+}
+
+#aboutMe a {
+    font-weight: 600;
+    color: #eca21d;
+    
+    -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+}
+
+#aboutMe a:hover {
+    text-decoration: none;
+    color: #222;
+}
+
+/* ---------- ========== FOOTER ========== ---------- */
+
+footer {
+    background-color: #222;
+    color: white;
 }
