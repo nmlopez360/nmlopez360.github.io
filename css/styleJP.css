@@ -557,15 +557,9 @@ nav {
     color: #222;
 }
 
-@media screen and (max-width: 767px){
-    #aboutMeText h1 {
-        font-size: 1.8em;
-    }
-}
-
 @media screen and (max-width: 576px){
     #aboutMeText h1 {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 }
 
@@ -578,6 +572,7 @@ footer {
     height: 175px;
     background-color: #222;
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
 }
 
