@@ -8,7 +8,7 @@ Dark Yellow: #eca21d
 
 --- Brand Fonts ---
 font-family: 'Josefin Sans', sans-serif;
-font-family: 'Noto Sans JP', ;
+font-family: 'Noto Sans JP', sans-serif;
 
 --- Box Shadow ---
 box-shadow: 1px 2px 4px rgba(0, 0, 0, .5); --> x, y, blur, color
@@ -22,7 +22,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: white;
-    font-family: 'Noto Sans JP', ;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 section {
@@ -33,7 +33,7 @@ section {
 }
 
 h1 {
-    font-family: 'Noto Sans JP', ;
+    font-family: 'Noto Sans JP', sans-serif;
     font-weight: 600;
     font-size: 2.2em;
     text-align: center;
@@ -133,6 +133,7 @@ nav {
 #langMenu ul li {
     display: inline-block;
     margin-left: 10px;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: .8em;
     font-weight: 600;
     color: #222;
@@ -151,7 +152,7 @@ nav {
     background-color: #222;
     border: 2px solid #222 !important;
     color: white;
-    line-height: 2.6;
+    line-height: 3;
     
     -moz-transition: all 0.5s ease-in-out 0s;
     -ms-transition: all 0.5s ease-in-out 0s;
@@ -326,6 +327,7 @@ nav {
 }
 
 .headerInfo h1 {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 3em;
     font-weight: 600;
     text-align: left;
@@ -338,6 +340,7 @@ nav {
 }
 
 .headerInfo h2 {
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.8em;
     font-weight: 300;
 }
