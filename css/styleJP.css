@@ -563,6 +563,29 @@ nav {
     }
 }
 
+/* ---------- ========== RESUME ========== ---------- */
+
+#pdfBtn {
+    display: block;
+    margin: 50px 0px;
+    padding: 15px 15px 10px 15px;
+    background-color: #f9c228;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #222;
+    
+    -moz-transition: color 0.5s ease-in-out 0s;
+    -ms-transition: color 0.5s ease-in-out 0s;
+    -o-transition: color 0.5s ease-in-out 0s;
+    -webkit-transition: color 0.5s ease-in-out 0s;
+    transition: color 0.5s ease-in-out 0s;
+}
+
+#pdfBtn:hover {
+    text-decoration: none;
+    color: white;
+}
+
 
 /* ---------- ========== FOOTER ========== ---------- */
 
