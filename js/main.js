@@ -1,38 +1,19 @@
-// ---------- Smooth Scrolling Effect ----------
-// Code from https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/
-$("a[href^='#']").click(function(e) {
-	e.preventDefault();
-	
-	var position = $($(this).attr("href")).offset().top;
-
-	$("body, html").animate({
-		scrollTop: position
-	}, 1000 /* speed */ );
-});
-
-
-// ---------- Activate Hamburger Menu Icon ----------
-// Code from https://codepen.io/mjperales/pen/jqqKex
-
-$('.hamburger').click(function(e){
-    e.preventDefault();
-    $(this).toggleClass('is-active');
-});
-
-
 // ---------- Toggle Menu Extras ----------
 function showDiv() {
-    $('#hamburgerMenu').toggleClass('showDiv'); // toggle show div class on button click
+    $(".hamburger").toggleClass('is-active');
+    $('#hamMenu').toggleClass('showDiv'); // toggle show div class on button click
     $('body').toggleClass('noScroll');
     /*$('#hamburgerMenuIcon').toggleClass('iconRight');*/
+    console.log('This worked!');
 }
 
-$(window).resize(function() {
-    if($(window).width() >= 576 // check for window width is greater than 576px
-       && $('#hamburgerMenu').hasClass('showDiv')
+// ---------- When Menu is open, hide it when window resizes ----------
+$(window).resize(function () {
+    if ($(window).width() >= 576 // check for window width is greater than 576px
+       && $('#hamMenu').hasClass('showDiv')
        && $('body').hasClass('noScroll'))
     {
-        $('#hamburgerMenu').removeClass('showDiv');
+        $('#hamMenu').removeClass('showDiv');
         $('.hamburger').removeClass('is-active');
         $('body').removeClass('noScroll');
     }
@@ -41,19 +22,27 @@ $(window).resize(function() {
 // ---------- Toggle Menu On Link Click ----------
 $(document).ready(function() {
     $('.hamLink').click(function() {
-        $('#hamburgerMenu').removeClass('showDiv');
+        $('#hamMenu').removeClass('showDiv');
         $('.hamburger').removeClass('is-active');
         $('body').removeClass('noScroll');
     });
 });
 
-// ---------- Navbar BackgroundColor Change ----------
-// Code from https://stackoverflow.com/questions/36246878/how-to-make-a-transparent-navbar-visible-when-scrolling
+// ---------- Always set width and height of work overlay to that of the container ----------
+$(document).ready(function() {
+    var workColWidth = $('.col-lg-3').width();
+    $('.workImgContainer').css({'height':workColWidth+'px'});
 
-$(window).scroll(function () {
-    if ($(window).scrollTop() >= 50) {
-        $('#navBarBKG').css('background','white');
-    } else {
-        $('#navBarBKG').css('background','transparent');
-    }
+    $('.workOverlay').css({'width':workColWidth+'px'});
+    $('.workOverlay').css({'height':workColWidth+'px'});
+    $('.workOverlay').css({'marginTop':'-'+workColWidth+'px'});  
+});
+
+$(window).resize(function () {
+    var workColWidth = $('.col-lg-3').width();
+    $('.workImgContainer').css({'height':workColWidth+'px'});
+
+    $('.workOverlay').css({'width':workColWidth+'px'});
+    $('.workOverlay').css({'height':workColWidth+'px'});
+    $('.workOverlay').css({'marginTop':'-'+workColWidth+'px'});
 });

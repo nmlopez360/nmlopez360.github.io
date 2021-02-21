@@ -1,0 +1,149 @@
+/* Reset values
+ * --------------------------------------- */
+#fp-nav{
+    font-size: 16px;
+}
+#fp-nav{
+    font-size: 16px;
+}
+#fp-nav ul li a span:not(.fp-sr-only){
+    left: 0;
+    top: 0;
+    background: transparent;
+}
+#fp-nav ul li a.active span:not(.fp-sr-only),
+#fp-nav ul li:hover a.active span:not(.fp-sr-only),
+#fp-nav ul li:hover a span:not(.fp-sr-only),
+#fp-nav ul li a span:not(.fp-sr-only){
+    margin: 0;
+}
+#fp-nav ul li a span:not(.fp-sr-only){
+    position:relative;
+    display: block;
+    background: transparent;
+}
+#fp-nav ul li a.active span:not(.fp-sr-only),
+#fp-nav ul li:hover a.active span:not(.fp-sr-only),
+#fp-nav ul li:hover a span:not(.fp-sr-only),
+#fp-nav ul li a span:not(.fp-sr-only){
+    height: 12px;
+    width: 12px;
+}
+#fp-nav ul li {
+    margin: 12px 7px;
+}
+#fp-nav ul li .fp-tooltip{
+    top:0;
+    line-height: 12px;
+}
+
+
+/* Colors
+ * --------------------------------------- */
+ /* Line */
+#fp-nav ul li:not(:last-child) a span:not(.fp-sr-only)::before {
+    background: #2c4240
+}
+/* Inactive bullet */
+#fp-nav ul li a span:not(.fp-sr-only):after{
+    border-color: #2c4240;
+    background: #995fc4
+}
+/* Inactive bullet hover/focus */
+#fp-nav ul li a:not(.active):focus span:not(.fp-sr-only)::after,
+#fp-nav ul li a:not(.active):hover span:not(.fp-sr-only)::after {
+    border-color: #2c4240;
+    background: #fff;
+}
+/* Active bullet  */
+#fp-nav ul li a.active span:not(.fp-sr-only):after {
+    border-color: #fff;
+}
+
+
+/* Extension
+ * --------------------------------------- */
+#fp-nav ul li{
+    width: auto;
+    margin: auto;
+    height: auto;
+}
+#fp-nav ul li a{
+    width: auto;
+    display: table;
+    height: auto;
+}
+#fp-nav ul li a.active span:not(.fp-sr-only),
+#fp-nav ul li:hover a.active span:not(.fp-sr-only),
+#fp-nav ul li:hover a span:not(.fp-sr-only),
+#fp-nav ul li a span:not(.fp-sr-only){
+    width: 2em;
+    height: 2em;
+}
+#fp-nav ul li a span:not(.fp-sr-only):before,
+#fp-nav ul li a span:not(.fp-sr-only):after{
+    content: '';
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#fp-nav ul li:not(:last-child) a span:not(.fp-sr-only)::before {
+    top: calc(2em - 9px);
+    left: 5px;
+    width: 2px;
+    height: calc(2em - 12px);
+}
+#fp-nav ul li a span:not(.fp-sr-only):after{
+    top: 50%;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    margin: -5px 0 0 0;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 0.3s, border-color 0.3s, border-width 0.3s, background 0.3s;
+    transition: transform 0.3s, border-color 0.3s, border-width 0.3s, background 0.3s;
+}
+#fp-nav ul li a.active span:not(.fp-sr-only):after {
+    border-width: 1px;
+    -webkit-transform: scale3d(1.6,1.6,1);
+    transform: scale3d(1.6,1.6,1);
+}
+#fp-nav ul li .fp-tooltip{
+    top: 10px;
+}
+#fp-nav.fp-right ul li .fp-tooltip {
+    right: 42px;
+}
+#fp-nav.fp-left ul li .fp-tooltip {
+    left: 23px;
+}
+
+/* Big
+ * --------------------------------------- */
+.fp-big-nav #fp-nav ul li a span:not(.fp-sr-only):after{
+    width: 18px;
+    height: 18px;
+}
+.fp-big-nav  #fp-nav ul li {
+    margin: 15px 7px;
+    width: 2.5em;
+    height: 2.5em;
+}
+.fp-big-nav #fp-nav ul li:not(:last-child) a span:not(.fp-sr-only)::before {
+    top: calc(2.5em - 9px);
+    left: 8px;
+    height: calc(4em - 18px);
+}
+
+.fp-big-nav #fp-nav ul li .fp-tooltip{
+    line-height: 20px;
+    top: 0.7em;
+}
+.fp-big-nav #fp-nav.fp-right ul li .fp-tooltip{
+    right: 3.7em;
+}
+.fp-big-nav #fp-nav.fp-left ul li .fp-tooltip{
+    left: 2.3em;
+}

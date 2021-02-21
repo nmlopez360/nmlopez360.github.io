@@ -1,41 +1,18 @@
-/*
---- Brand Colors ---
-White: white
-Off-White: #f1f1f1
-Off-Black: #222
-Yellow: #f9c228
-Dark Yellow: #eca21d
-
---- Brand Fonts ---
-font-family: 'Josefin Sans', sans-serif;
-
---- Box Shadow ---
-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5); --> x, y, blur, color
-
---- Linear Gradient Highlight ---
-background: linear-gradient(transparent 50%, #222 50%, #222 90%, transparent 90%);
-
-*/
-
 body {
     margin: 0px;
     padding: 0px;
-    background-color: white;
     font-family: 'Josefin Sans', sans-serif;
+    background-color: #fbfbfb;
 }
 
-section {
-    position: static;
-    width 100%;
-    height: auto;
-    padding: 150px 50px 100px 50px;
+.fp-tooltip {
+
 }
 
-h1 {
-    font-family: 'Josefin Sans', sans-serif;
+/*Header Intro*/
+#slideHeader h1 {
+    font-size: 4em;
     font-weight: 600;
-    font-size: 3em;
-    text-align: center;
     
     -moz-transition: all 0.3s ease-in-out 0s;
     -ms-transition: all 0.3s ease-in-out 0s;
@@ -44,146 +21,135 @@ h1 {
     transition: all 0.3s ease-in-out 0s;
 }
 
-/* ---------- ========== NAVBAR ========== ---------- */
-#navBarBKG {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 125px;
-    z-index: 8;
+#slideHeader h2 {
+    font-size: 2em;
+    font-weight: 400;
     
-    -moz-transition: background 0.5s ease-in-out 0s;
-    -ms-transition: background 0.5s ease-in-out 0s;
-    -o-transition: background 0.5s ease-in-out 0s;
-    -webkit-transition: background 0.5s ease-in-out 0s;
-    transition: background 0.5s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
-nav {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100px;
-    z-index: 9;
-}
-
-#logo {
-    width: 100px;
-    margin: 25px 0px 0px 25px;
-    z-index: 999;
-}
-
-#navMenu {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 500px;
-    margin-left: 50px;
-    padding: 0px;
-    z-index: -1;
-}
-
-#navMenu ul {
-    list-style: none;
-    text-align: center;
-}
-
-#navMenu ul li {
-    display: inline-block;
-    width: 125px;
-    height: 100px;
-    margin: 0px -3px;
-    padding: 30px 0px;
-}
-
-#navMenu ul li a {
-    display: block;
-    text-decoration: none;
+/*Nav Name Logo*/
+nav h3 {
+    margin: 12px 12px 0 20px;
+    width: 220px;
+    height: 50px;
+    float: left;
+    
+    background-color: #222;
+    
+    font-size: 1.5em;
     font-weight: 600;
-    font-size: 1em;
-    color: #222;
-    line-height: 4.7;
+    text-align: center;
+    line-height: 2.3;
     
-    -moz-transition: color 0.5s ease-in-out 0s;
-    -ms-transition: color 0.5s ease-in-out 0s;
-    -o-transition: color 0.5s ease-in-out 0s;
-    -webkit-transition: color 0.5s ease-in-out 0s;
-    transition: color 0.5s ease-in-out 0s;
+    color: #f5f5f5;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
-#navMenu ul li a:hover {
-    text-decoration: none;
+nav h3:hover {
     color: #f9c228;
 }
 
-#langMenu {
-    position: fixed;
-    top: 45px;
-    right: 60px;
-}
-
-#langMenu ul {
-    list-style: none;
-    text-align: center;
-}
-
-#langMenu ul li {
-    display: inline-block;
-    margin-left: 10px;
-    font-size: .8em;
+/*Work Title & Info*/
+#work h4 {
+    padding: 0px 5px;
+    font-size: 1.3em;
     font-weight: 600;
-    color: #222;
+    text-align: center;
+    color: #f5f5f5;
 }
 
-#langMenu ul li:nth-child(1), #langMenu ul li:nth-child(3) {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
+#work h5 {
+    padding: 0px 10px;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    color: #dddddd;
 }
 
-#langMenu ul li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-color: #222;
-    border: 2px solid #222 !important;
-    color: white;
-    line-height: 2.9;
+@media screen and (max-width: 992px){
+    #work h4 {
+        font-size: 2.5em;
+    }
     
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -ms-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
+    #work h5 {
+        font-size: 1.7em;
+    }
 }
 
-#langMenu ul li a:hover {
-    text-decoration: none;
-    color: #f9c228 !important;
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
 }
 
-#unselectedLang {
-    background-color: transparent !important;
-    color: #222 !important;
+@keyframes fadeIn{
+    0% {
+        margin-top: 50px;
+        opacity:0;
+    }
+    100% {
+        margin-top: 0px;
+        opacity:1;
+    }
 }
 
-#unselectedLang:hover {
-    background-color: #222 !important;
-    color: white !important;
-    border: 2px solid #222 !important;
+@-moz-keyframes fadeIn {
+    0% {
+        margin-top: 50px;
+        opacity:0;
+    }
+    100% {
+        margin-top: 0px;
+        opacity:1;
+    }
 }
 
-#hamburgerMenuIcon {
-    position: fixed;
-    top: 25px;
-    right: 25px;
-    display: none;
+@-webkit-keyframes fadeIn {
+    0% {
+        margin-top: 50px;
+        opacity:0;
+    }
+    100% {
+        margin-top: 0px;
+        opacity:1;
+    }
 }
 
+@-o-keyframes fadeIn {
+    0% {
+        margin-top: 50px;
+        opacity:0;
+    }
+    100% {
+        margin-top: 0px;
+        opacity:1;
+    }
+}
 
-/* ---------- ========== HAMBURGER MENU OVERLAY ========== ---------- */
+@-ms-keyframes fadeIn {
+    0% {
+        margin-top: 50px;
+        opacity:0;
+    }
+    100% {
+        margin-top: 0px;
+        opacity:1;
+    }
+}
+
+/* ---------- || NAVBAR || ---------- */
 
 .showDiv {
     display: inline-block !important;
@@ -193,369 +159,367 @@ nav {
     overflow-y: hidden !important;
 }
 
-.iconRight {
-    right: 40px !important;
-}
-
-#hamburgerMenu {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background-color: #222;
-    overflow: hidden;
-    z-index: 99;
-    display: none;
-}
-
-#hamburgerMenu #navMenu2 ul {
-    list-style-type: none;
-    margin: 25vh auto 0 auto;
-    padding: 0;
-    width: 200px;
-}
-
-#hamburgerMenu #navMenu2 ul li a {
-    display: block;
-    padding: 20px 20px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5em;
-    color: #f9c228;
-    
-    -moz-transition: color 0.5s ease-in-out 0s;
-    -ms-transition: color 0.5s ease-in-out 0s;
-    -o-transition: color 0.5s ease-in-out 0s;
-    -webkit-transition: color 0.5s ease-in-out 0s;
-    transition: color 0.5s ease-in-out 0s;
-}
-
-#hamburgerMenu #navMenu2 ul li a:hover {
-    color: #fff;
-}
-
-#hamburgerMenu #langMenu2 {
+#navBar {
     position: fixed;
-    left: -50px;
-    right: 0px;
-    margin: 0 auto;
-    bottom: 50px;
-}
-
-#hamburgerMenu #langMenu2 ul {
-    list-style: none;
-    text-align: center;
-}
-
-#hamburgerMenu #langMenu2 ul li {
-    display: inline-block;
-    margin-left: 10px;
-    font-size: .8em;
-    font-weight: 600;
-    color: #f9c228;
-}
-
-#hamburgerMenu #langMenu2 ul li:nth-child(1), #langMenu2 ul li:nth-child(3) {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-}
-
-#hamburgerMenu #langMenu2 ul li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-color: #f9c228;
-    border: 2px solid #f9c228 !important;
-    color: #222;
-    line-height: 2.9;
-    
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -ms-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-}
-
-#hamburgerMenu #langMenu2 ul li a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-#unselectedLang2 {
-    background-color: transparent !important;
-    color: #f9c228 !important;
-}
-
-#unselectedLang2:hover {
-    background-color: #f9c228 !important;
-    color: white !important;
-}
-
-
-/* ---------- ========== HEADER ========== ---------- */
-
-#headerInfoTop {
-    display: inline-block;
-    position: relative;
-    left: 0px;
-    width: 65%;
-    height: 100vh;
-    min-height: 650px;
-    padding: 250px 0px 0px 175px;
-    background-color: #f5f5f5;
-}
-
-#headerInfoBtm {
-    position: relative;
+    top: 0px;
     left: 0px;
     width: 100%;
-    padding: 100px;
-    background-color: #f5f5f5;
-    display: none;
+    height: 100px;
+    z-index: 99;
+    
+    -moz-transition: background-color 0.3s ease-in-out 0s;
+    -ms-transition: background-color 0.3s ease-in-out 0s;
+    -o-transition: background-color 0.3s ease-in-out 0s;
+    -webkit-transition: background-color 0.3s ease-in-out 0s;
+    transition: background-color 0.3s ease-in-out 0s;
 }
 
-#centerInfoTextVertical {
+nav {
     position: absolute;
-    height: 255px;
-    top: 0px;
-    bottom: 0px;
-    margin: auto 0px;
-}
-
-.headerInfo h1 {
-    margin-top: 0px;
-    font-size: 4em;
-    font-weight: 600;
-    text-align: left;
-}
-
-#name {
-    font-size: 1.3em;
-    font-weight: 600;
-    color: #f9c228;
-}
-
-.headerInfo h2 {
-    font-size: 1.8em;
-}
-
-#headerImg {
-    position: relative;
-    float: right;
+    top: 12px;
+    left: 0px;
     right: 0px;
-    width: 35%;
-    height: 100vh;
-    min-height: 650px;
-    background-color: #f9c228;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1750px;
 }
 
-@media screen and (max-width: 1200px){
-    #headerInfoTop {
-        min-height: 550px;
-    }
-    
-    #centerInfoTextVertical {
-        height: 165px;
-    }
-    
-    .headerInfo h1 {
-        font-size: 2.5em;
-    }
-
-    .headerInfo h2 {
-        font-size: 1.2em;
-    }
-    
-    #headerImg {
-        min-height: 550px;
-    }
+#navBar ul {
+    margin: 12px 0px 0px 0px;
+    padding-left: 0px;
+    list-style-type: none;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 992px){
-    #navBarBKG {
-        display: none;
-    }
-    
-    nav {
-        background-color: white;
-    }
-    
-    #logo {
-        width: 75px;
-    }
-    
-    #navMenu {
-        left: -50px;
-    }
-    
-    #navMenu ul li {
-        width: 100px;
-    }
-    
-    #navMenu ul li a {
-        font-size: .9em;
-        line-height: 3;
-    }
-    
-    #langMenu {
-        top: 35px;
-        right: 40px;
-    }
-    
-    #headerImg {
-        position: relative;
-        top: 100px;
-        left: 0px;
-        width: 100%;
-        height: 50%;
-        min-height: 400px;
-    }
-    
-    #headerInfoTop {
-        display: none;
-    }
-    
-    #headerInfoBtm {
-        display: inline-block;
-    }
-    
-    #centerInfoText {
-        left: 0px;
-        right: 0px;
-        margin: 0 auto;
-        width: 350px;
-        height: 175px;
-    }
+#navBar ul li {
+    float: left;
 }
 
-@media screen and (max-width: 576px){
-    #navMenu {
-        display: none;
-    }
+#navBar ul li a {
+    position: relative;
+    display: block;
+    margin: 0px 10px;
+    padding: 10px;
     
-    #langMenu {
-        display: none;
-    }
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #222;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.5;
     
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#navBar ul li a:hover {
+    text-shadow: 0 0 .8px #222, 0 0 .8px #222;
+}
+
+.navDivider {
+    font-size: 2em;
+    font-weight: 400;
+    color: #222;
+    line-height: 1.75;
+}
+
+#langNav {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 155px;
+}
+
+#navBar #langNav li{
+    float: left;
+}
+
+#navBar #langNav li a{
+    position: relative;
+    display: block;
+    margin: 0px 10px;
+    padding: 10px;
+    width: 50px;
+    
+    font-size: 1em;
+}
+
+#navBar #langNav li:first-child a {
+    background-color: #222;
+    border: 3px solid #222;
+    color: #f5f5f5;
+}
+
+#navBar #langNav li:first-child a:hover {
+    color: #FFE39B;
+}
+
+#navBar #langNav li:last-child a {
+    border: 3px solid #222;
+    color: #222;
+}
+
+/* ---------- || HAMBURGER NAV MENU || ---------- */
+
+#hamburgerMenuIcon {
+    position: fixed;
+    display: none;
+    top: 20px;
+    right: 10px;
+    
+    z-index: 1000;
+}
+
+@media screen and (max-width: 768px){
     #hamburgerMenuIcon {
         display: inline-block;
-        z-index: 999;
     }
     
-    .headerInfo h1 {
+    #navBar ul {
+        display: none;
+    }
+}
+
+#hamMenu {
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+    
+    z-index: 999;
+}
+
+.hamLink {
+    display: block;
+    padding: 20px 0px;
+    
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    
+    -moz-transition: color 0.3s ease-in-out 0s;
+    -ms-transition: color 0.3s ease-in-out 0s;
+    -o-transition: color 0.3s ease-in-out 0s;
+    -webkit-transition: color 0.3s ease-in-out 0s;
+    transition: color 0.3s ease-in-out 0s;
+}
+
+.hamLink:hover {
+    text-decoration: none;
+    color: #FFE39B;
+}
+
+#mainNavHam {
+    margin-top: 100px;
+}
+
+/* ---------- || SLIDE 1 HEADER || ---------- */
+
+#slideHeader {
+    background-image: url(../img/headerBKG/nmlopez_HeaderBKG_LandscapeT.gif);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+@media screen and (orientation: portrait){
+    #slideHeader {
+        background-image: url(../img/headerBKG/nmlopez_HeaderBKG_PortraitT.gif);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -ms-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+}
+
+#headerText {
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    width: 650px;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+@media screen and (max-width: 768px){
+    #slideHeader h1 {
         font-size: 2em;
     }
-
-    #name {
-        font-size: 1.2em;
-    }
-
-    .headerInfo h2 {
-        font-size: .9em;
+    
+    #slideHeader h2 {
+        font-size: 1em;
     }
     
-    #headerInfoBtm {
-        padding: 100px 25px 100px 25px;
-    }
-    
-    #centerInfoText {
-        left: 0px;
-        right: 0px;
-        margin: 0 auto;
-        width: 265px;
-        height: 150px;
+    #headerText {
+        top: 45%;
+        width: 350px;
     }
 }
 
-
-/* ---------- ========== WORK ========== ---------- */
+/* ---------- || SLIDE 2 WORK || ---------- */
 
 #work {
-    background-color: white;
+    background-image: url(../img/headerBKG/nmlopez_HeaderBKG_LandscapeB.gif);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
-.workBox {
-    margin: 0px -5px 20px -5px;
+@media screen and (orientation: portrait){
+    #work {
+        background-image: url(../img/headerBKG/nmlopez_HeaderBKG_PortraitB.gif);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -ms-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
 }
 
-.workBoxImg {
+#workContainer {
+    margin-top: 100px;
+}
+
+.workImgContainer {
+    margin: 15px 0px;
+    width: 100%;
     overflow: hidden;
+    
+    background-color: blue;
 }
 
 .workImg {
     width: 100%;
+    overflow: hidden;
     
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.workBox:hover .workImg {
-    transform: scale(1.2);
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .workOverlay {
     position: absolute;
-    top: 0px;
-    left: 10px;
-    width: calc(100% - 20px);
+    background-color: rgb(0, 0, 0, .4);
     opacity: 0;
     
-    -moz-transition: opacity 0.3s ease-in-out;
-    -ms-transition: opacity 0.3s ease-in-out;
-    -o-transition: opacity 0.3s ease-in-out;
-    -webkit-transition: opacity 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.workBox:hover .workOverlay {
-    opacity: 1;
-    z-index: 3;
-}
-
-
-/* ---------- ========== ABOUT ME ========== ---------- */
-
-#aboutMe {
-    background-color: #f5f5f5;
-}
-
-#aboutMeText {
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-#aboutMe h3 {
-    font-weight: 600;
-    color: #222;
-}
-
-#aboutMe a {
-    font-weight: 600;
-    color: #eca21d;
+    z-index: 2;
     
-    -moz-transition: color 0.3s ease-in-out;
-    -ms-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
-    -webkit-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
 
-#aboutMe a:hover {
+.workOverlay:hover .workImg {
+    transform: scale(1.2);
+}
+
+.workOverlay:hover {
+    opacity: 1;
+}
+
+
+.workIcon {
+    margin: 10% 0px 10% 32.5%;
+    width: 35%;
+}
+
+/* ---------- || SLIDE 3 ABOUT ME || ---------- */
+@media screen and (max-width: 768px){
+    #aboutmeContainer {
+        padding-top: 100px;
+    }
+}
+    
+.aboutHeader {
+    font-size: 2em;
+    font-weight: 600;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#aboutme p {
+    font-weight: 400;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#aboutme a {
+    font-weight: 600;
+    color: #e6b122;
+    
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#aboutme a:hover {
+    color: #eca21d;
     text-decoration: none;
-    color: #222;
 }
 
-/* ---------- ========== FOOTER ========== ---------- */
+.col-lg-4 {
+    padding: 0px 30px;
+}
+
+
+/* ---------- || FOOTER || ---------- */
 
 footer {
     position: relative;
     width: 100%;
-    height: 175px;
+    height: 215px;
+    margin-top: 100px;
     background-color: #222;
     text-align: center;
     color: white;
@@ -563,7 +527,7 @@ footer {
 
 #footerNav ul {
     position: relative;
-    width: 290px;
+    width: 155px;
     left: 10px;
     right: 0px;
     margin: 35px auto 35px auto;
