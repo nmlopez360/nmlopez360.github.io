@@ -28,6 +28,12 @@ background: linear-gradient(transparent 50%, #222 50%, #222 90%, transparent 90%
     font-size: 3.5em;
 }
 
+@media screen and (orientation: portrait){
+    #resume h1 {
+        font-size: 2em;
+    }
+}
+
 #resume h2 {
     margin-left: -50px;
     margin-bottom: 50px;
@@ -63,6 +69,13 @@ background: linear-gradient(transparent 50%, #222 50%, #222 90%, transparent 90%
 #pdfBtn:hover {
     text-decoration: none;
     color: #f9c228;
+}
+
+@media screen and (orientation: portrait){
+    #pdfBtn {
+        width: 250px;
+        font-size: 1em;
+    }
 }
 
 .profileInfo a {
