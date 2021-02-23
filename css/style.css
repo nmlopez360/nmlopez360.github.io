@@ -15,6 +15,7 @@ body {
         left: calc(50% - 65px);
         top: auto;
         bottom: -100px;
+        width: 33px;
         transform-origin: top left;
         transform: rotate(-90deg);
     }
