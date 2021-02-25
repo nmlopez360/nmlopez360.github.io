@@ -1,0 +1,112 @@
+/* box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.2); */
+
+/* ---------- || NAVBAR || ---------- */
+
+.showDiv {
+    display: inline-block !important;
+}
+
+.noScroll {
+    overflow-y: hidden !important;
+}
+
+#navBar {
+    background-color: #fbfbfb;
+}
+
+nav {
+    left: 17px;
+    
+    -moz-transition: left 0.3s ease-in-out 0s;
+    -ms-transition: left 0.3s ease-in-out 0s;
+    -o-transition: left 0.3s ease-in-out 0s;
+    -webkit-transition: left 0.3s ease-in-out 0s;
+    transition: left 0.3s ease-in-out 0s;
+}
+
+@media screen and (max-width: 1770px){
+    nav {
+        left: 0px;
+    }
+}
+
+/* ---------- || WORK || ---------- */
+#workContent {
+    margin-top: 150px;
+}
+
+#workContent h1 {
+    font-weight: 600;
+}
+
+.processDeckBtn {
+    background-color: #252525;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 200px;
+    
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.processDeckBtn a {
+    color: #f5f5f5;
+    text-decoration: none;
+
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.processDeckBtn a:hover {
+    color: #f9c228;
+}
+
+.portfolioWorkHeaderImg {
+    width: 100%;
+    margin: 25px 0px 50px 0px;
+}
+
+.box {
+    border: 2px solid #252525;
+    padding: 10px;
+    
+    font-weight: 600;
+    text-align: center;
+    color: #252525;
+}
+
+.boxInfo {
+    line-height: 3.3;
+}
+
+/* Solid border */
+hr.solid {
+    width: 100%;
+    border-top: 3px solid #ccc;
+}
+
+#slidesStart h2 {
+    margin-top: 50px;
+    font-weight: 600;
+}
+
+.workImg {
+    width: 100%;
+    box-shadow: 0px 5px 50px 1px rgba(0, 0, 0, 0.1);
+}
+
+.acnhGif {
+    margin: 25px 0px;
+}
+
+@media screen and (max-width: 992px){
+    .acnhGif {
+        margin: 0px;
+    }
+    .acnhGifPortrait {
+        margin: 25px 0px;
+    }
+}

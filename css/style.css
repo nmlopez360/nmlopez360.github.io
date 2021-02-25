@@ -242,42 +242,6 @@ nav {
     line-height: 1.75;
 }
 
-#langNav {
-    position: absolute;
-    top: 0px;
-    right: 15px;
-    width: 155px;
-}
-
-#navBar #langNav li{
-    float: left;
-}
-
-#navBar #langNav li a{
-    position: relative;
-    display: block;
-    margin: 0px 10px;
-    padding: 10px;
-    width: 50px;
-    
-    font-size: 1em;
-}
-
-#navBar #langNav li:first-child a {
-    background-color: #222;
-    border: 3px solid #222;
-    color: #f5f5f5;
-}
-
-#navBar #langNav li:first-child a:hover {
-    color: #FFE39B;
-}
-
-#navBar #langNav li:last-child a {
-    border: 3px solid #222;
-    color: #222;
-}
-
 /* ---------- || HAMBURGER NAV MENU || ---------- */
 
 #hamburgerMenuIcon {
