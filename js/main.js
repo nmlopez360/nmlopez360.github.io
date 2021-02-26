@@ -4,7 +4,6 @@ function showDiv() {
     $('#hamMenu').toggleClass('showDiv'); // toggle show div class on button click
     $('body').toggleClass('noScroll');
     /*$('#hamburgerMenuIcon').toggleClass('iconRight');*/
-    console.log('This worked!');
 }
 
 // ---------- When Menu is open, hide it when window resizes ----------
@@ -41,7 +40,7 @@ $(document).ready(function() {
 $(window).resize(function () {
     var workColWidth = $('.col-lg-3').width();
     $('.workImgContainer').css({'height':workColWidth+'px'});
-
+    
     $('.workOverlay').css({'width':workColWidth+'px'});
     $('.workOverlay').css({'height':workColWidth+'px'});
     $('.workOverlay').css({'marginTop':'-'+workColWidth+'px'});
