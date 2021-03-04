@@ -1,11 +1,8 @@
 # Nicole Lopez | Portfolio Site Code
->**Portfolio Site:** [https://nmlopez.com/](nmlopez360.github.io)
-
->**LinkedIn:** [/nmlopez360](https://www.linkedin.com/in/nmlopez360/)
-
->**Instagram:** [@nmlopez360](https://www.instagram.com/nmlopez360/)
-
->**Resume:** [my resume](https://nmlopez.com/documents/NicoleLopez_Resume.pdf)
+- **Portfolio Site:** [https://nmlopez.com/](nmlopez360.github.io)
+- **LinkedIn:** [/nmlopez360](https://www.linkedin.com/in/nmlopez360/)
+- **Instagram:** [@nmlopez360](https://www.instagram.com/nmlopez360/)
+- **Resume:** [my resume](https://nmlopez.com/documents/NicoleLopez_Resume.pdf)
 
 ## Introduction
 Hi, I'm **Nicole Lopez**!
