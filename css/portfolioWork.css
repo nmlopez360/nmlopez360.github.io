@@ -217,3 +217,11 @@ hr.solid {
         margin: 25px 0px;
     }
 }
+
+.phoneBKG {
+    border-top: 30px solid black;
+    border-right: 15px solid black;
+    border-bottom: 60px solid black;
+    border-left: 15px solid black;
+    border-radius: 35px;
+}
