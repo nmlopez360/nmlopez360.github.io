@@ -54,11 +54,11 @@
                 <a href="index.html"><h3>NICOLE LOPEZ</h3></a>
                 <!-- Main Nav Items -->
                 <ul id="mainNav">
-                    <li><a href="#slideWork" id="workLink">work</a></li>
+                    <li><a href="#work" id="workLink">work</a></li>
                     <li class="navDivider">/</li>
-                    <li><a href="#slideAboutMe" id="aboutmeLink">about me</a></li>
+                    <li><a href="#aboutme" id="aboutmeLink">about me</a></li>
                     <li class="navDivider">/</li>
-                    <li><a href="#slideResume" id="resumeLink">resume</a></li>
+                    <li><a href="#resume" id="resumeLink">resume</a></li>
                 </ul>
                 <!-- Hamburger Menu Icon -->
                 <div id="hamburgerMenuIcon">
@@ -73,9 +73,9 @@
             <!-- Hamburger Menu Links -->
             <div id="hamMenu">
                 <div id="mainNavHam">
-                    <a href="#slideWork" class="hamLink">work</a>
-                    <a href="#slideAboutMe" class="hamLink">about me</a>
-                    <a href="#slideResume" class="hamLink">resume</a>
+                    <a href="#work" class="hamLink">work</a>
+                    <a href="#aboutme" class="hamLink">about me</a>
+                    <a href="#resume" class="hamLink">resume</a>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
             </div>
             
             <!-- --- |Work Slide| ---  -->
-            <div class="section" id="work" data-anchor="slideWork">
+            <div class="section" id="workSection" data-anchor="work">
                 
                 <div class="container" id="workContainer">
                 
@@ -124,7 +124,7 @@
                             <!-- Work Img -->
                             <img class="workImg" src="/img/workIcons/overview_Preview.png" alt="Project overview">
                             
-                            <a href="/documents/processDecks/overview_ProcessDeck_NicoleLopez.pdf" target="_blank">
+                            <a href="portfolioWork/overview.html">
                                 <div class="workOverlay">
                                     <!-- Work Icon -->
                                     <img class="workIcon" src="/img/workIcons/overview_Icon.png" alt="Project Icon overview">
@@ -214,7 +214,7 @@
             </div>
             
             <!-- --- |About Me Slide| ---  -->
-            <div class="section" id="aboutme" data-anchor="slideAboutMe">
+            <div class="section" id="aboutmeSection" data-anchor="aboutme">
                 <div class="container" id="aboutmeContainer">
                     <div class="row justify-content-md-center">
 
@@ -237,7 +237,7 @@
             </div>
             
             <!-- --- |Resume Slide| ---  -->
-            <div class="section" id="resume" data-anchor="slideResume">
+            <div class="section" id="resumeSection" data-anchor="resume">
                 <div class="container" id="resumeContainer">
 
                     <!-- Row INTRODUCTION -->
@@ -435,7 +435,7 @@
         <script type="text/javascript">
             var myFullpage = new fullpage('#fullpage', {
                 licenseKey: 'D120E67E-289C40CF-A77522C4-EAF6983D',
-                anchors: ['slideHeader', 'slideWork', 'slideAboutMe', 'slideResume'],
+                anchors: ['slideHeader', 'work', 'aboutme', 'resume'],
                 autoScrolling: true,
                 scrollOverflow: true,
                 scrollOverflowReset: true,
@@ -446,21 +446,21 @@
                 afterLoad: function(origin, destination, direction){
                     var leavingSection = 'slideHeader';
                     
-                    /* Index 0 = 'slideHeader' --> go directly to either 'slideAboutMe' or 'slideResume' */
+                    /* Index 0 = 'slideHeader' --> go directly to either 'aboutme' or 'resume' */
                     if(origin.index == 0){
                         if(destination.index == 2 || destination.index == 3) {
                             document.getElementById('navBar').style.background = '#fcfcfc';
                         }
                     }
-                    /* Index 1 = 'slideWork' --> goes down to 'slideAboutMe' or 'slideResume' */
+                    /* Index 1 = 'work' --> goes down to 'aboutme' or 'resume' */
                     if(origin.index == 1 && direction =='down'){
                         document.getElementById('navBar').style.background = '#fcfcfc';
                     }
-                    /* Index 2 = 'slideAboutMe' --> goes up to 'slideWork' or 'slideHeader'*/
+                    /* Index 2 = 'aboutme' --> goes up to 'work' or 'slideHeader'*/
                     if(origin.index == 2 && direction == 'up'){
                         document.getElementById('navBar').style.background = 'transparent';
                     }
-                    /* Index 3 = 'slideResume' --> go directly to either 'slideWork' or 'slideHeader'*/
+                    /* Index 3 = 'resume' --> go directly to either 'work' or 'slideHeader'*/
                     if(origin.index == 3){
                         if(destination.index == 1 || destination.index == 0) {
                             document.getElementById('navBar').style.background = 'transparent';

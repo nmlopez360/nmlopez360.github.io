@@ -76,7 +76,7 @@ nav h3:hover {
 }
 
 /*Work Title & Info*/
-#work h4 {
+#workSection h4 {
     padding: 0px 5px;
     font-size: 1.3em;
     font-weight: 600;
@@ -84,7 +84,7 @@ nav h3:hover {
     color: #f5f5f5;
 }
 
-#work h5 {
+#workSection h5 {
     padding: 0px 10px;
     font-size: 1em;
     font-weight: 400;
@@ -93,11 +93,11 @@ nav h3:hover {
 }
 
 @media screen and (max-width: 992px){
-    #work h4 {
+    #workSection h4 {
         font-size: 2.5em;
     }
     
-    #work h5 {
+    #workSection h5 {
         font-size: 1.7em;
     }
 }
@@ -365,7 +365,7 @@ nav {
 
 /* ---------- || SLIDE 2 WORK || ---------- */
 
-#work {
+#workSection {
     background-image: url(../img/headerBKG/nmlopez_HeaderBKG_LandscapeB.gif);
     background-size: cover;
     background-position: top;
@@ -379,7 +379,7 @@ nav {
 }
 
 @media screen and (orientation: portrait){
-    #work {
+    #workSection {
         background-image: url(../img/headerBKG/nmlopez_HeaderBKG_PortraitB.gif);
         background-size: cover;
         background-position: top;
@@ -469,7 +469,7 @@ nav {
     transition: all 0.3s ease-in-out 0s;
 }
 
-#aboutme p {
+#aboutmeSection p {
     font-weight: 400;
     
     -moz-transition: all 0.3s ease-in-out 0s;
@@ -479,7 +479,7 @@ nav {
     transition: all 0.3s ease-in-out 0s;
 }
 
-#aboutme a {
+#aboutmeSection a {
     font-weight: 600;
     color: #e6b122;
     
@@ -490,8 +490,8 @@ nav {
     transition: all 0.3s ease-in-out 0s;
 }
 
-#aboutme a:hover {
-    color: #eca21d;
+#aboutmeSection a:hover {
+    color: #000000;
     text-decoration: none;
 }
 
