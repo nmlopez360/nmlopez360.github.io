@@ -1,5 +1,5 @@
 # Nicole Lopez | Portfolio Site Code
-- **Portfolio Site:** [https://nmlopez.com/](https://nmlopez.design/)
+- **Portfolio Site:** [https://nmlopez.design/](https://nmlopez.design/)
 - **LinkedIn:** [/nmlopez360](https://www.linkedin.com/in/nmlopez360/)
 - **Instagram:** [@nmlopez360](https://www.instagram.com/nmlopez360/)
 - **Resume:** [my resume](https://nmlopez.design/documents/NicoleLopez_Resume.pdf)
