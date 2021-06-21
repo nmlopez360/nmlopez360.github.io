@@ -13,464 +13,347 @@
         
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        
-        <!-- Fullpage -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css" integrity="sha512-RVmrWua3k1yTDEOg4Yzs2bK5+Thh7nM6jrhDq/6/5/Mwa0JbYe4pP4YMK5sqghKz01T3DgrwYc57Jaf1PSurCg==" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="/fullpage/all-navigations/expanding-squares.css">
-        
+
         <!-- My CSS -->
-        <link rel="stylesheet" type="text/css" href="/css/hamburgers.css">
 		<link rel="stylesheet" type="text/css" href="/css/style.css">
-        <link rel="stylesheet" type="text/css" href="/css/resume.css">
         
         <!-- ---------- OTHER ---------- -->
         
-        <!-- Google Font Typefaces & FontAwesome -->
+        <!-- Google Font Typefaces-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Jost:wght@500&display=swap" rel="stylesheet">
-        
-        <!-- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon_io/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon_io/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_io/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 	</head>
     
 	<body>
         <!-- ---------- SCRIPTS ---------- -->
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-        
+
+        <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/vendors/scrolloverflow.min.js" integrity="sha512-pYyQWhzi2lV+RM4GmaUA56VPL48oLVvsHmP9tuQ8MaZMDHomVEDjXXnfSVKXayy+wLclKPte0KbsuVoFImtE7w==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous"></script>
-        
-        <script src="js/main.js"></script>
-        
-        <!-- ---------- WEBSITE CONTENT ---------- -->
-        <div id="navBar">
-            <nav>
-                <!-- Name Logo -->
-                <a href="index.html"><h3>NICOLE LOPEZ</h3></a>
-                <!-- Main Nav Items -->
-                <ul id="mainNav">
-                    <li><a href="#work" id="workLink">work</a></li>
-                    <li class="navDivider">/</li>
-                    <li><a href="#aboutme" id="aboutmeLink">about me</a></li>
-                    <li class="navDivider">/</li>
-                    <li><a href="#resume" id="resumeLink">resume</a></li>
-                </ul>
-                <!-- Hamburger Menu Icon -->
-                <div id="hamburgerMenuIcon">
-                    <button class="hamburger hamburger--squeeze" type="button" onclick="showDiv()">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </button> 
-                </div>
-            </nav>
-            
-            <!-- Hamburger Menu Links -->
-            <div id="hamMenu">
-                <div id="mainNavHam">
-                    <a href="#work" class="hamLink">work</a>
-                    <a href="#aboutme" class="hamLink">about me</a>
-                    <a href="#resume" class="hamLink">resume</a>
-                </div>
+
+        <!-- My JS -->
+        <script src="/js/main.js"></script>
+
+        <!-- ---------- NAVIGATION MENU ---------- -->
+        <nav>
+            <ul>
+                <li><a href="index.html" id="navLogo">NICOLE LOPEZ</a></li>
+                <li><a href="#work" class="navLink scrolling">WORK</a></li>
+                <li><p class="navSlash">/</p></li>
+                <li><a href="#aboutme" class="navLink">ABOUT ME</a></li>
+                <li><p class="navSlash">/</p></li>
+                <li><a href="#resume" class="navLink">RESUME</a></li>
+            </ul>
+        </nav>
+
+        <!-- ---------- HEADER SECTION ---------- -->
+        <section id="header">
+
+            <!-- --- Header Background Gradient --- -->
+            <div id="headerBKG"></div>
+
+            <!-- --- Header Content --- -->
+            <div id="headerContent">
+                <div class="h1Line"></div>
+                <h1>HI, I'M NICOLE!</h1>
+                <h2>I am a <span style="font-weight: 700; color: #222;">Visual & Interactive Designer</span> who aims to spread <span style="font-weight: 700;">happiness</span> through design <img src="img/heartIcon.svg" alt="<3"> </h2>
             </div>
-        </div>
-        
-        <!-- ---------- FULL PAGE CONTENT ---------- -->
-        <div id="fullpage">
-            
-            <!-- --- |Header Slide| ---  -->
-            <div class="section" id="slideHeader">
-                
-                <div class="fade-in" id="headerText">
-                    <h1>Hi, I'm Nicole Lopez!</h1>
-                    <h2>I am a Visual & Interactive Designer who aims to spread happiness through design</h2>
-                </div>
-                
+
+            <!-- --- Scroll Down Animation --- -->
+            <div id="scrollDownAni">
+                <div class="scrollLine"></div>
+                <a href="#work">    
+                    <div id="scrollDown">
+                        <svg width="40px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                            <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:#222;stroke-width:20px;"/>
+                            <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" style="fill:none;stroke:#222;stroke-width:20px;"/>
+                        </svg>
+                        <h4>SCROLL DOWN</h4>
+                    </div>
+                </a>
             </div>
-            
-            <!-- --- |Work Slide| ---  -->
-            <div class="section" id="workSection" data-anchor="work">
-                
-                <div class="container" id="workContainer">
-                
+
+        </section>
+
+        <br>
+        <br>
+
+        <!-- ---------- WORK SECTION ---------- -->
+        <section id="work">
+            <div class="container" id="workContent">
+                <div class="h1LineWork"></div>
+                <h1>MY WORK</h1> 
+
                 <!-- Work Row 1 -->
                 <div class="row justify-content-md-center">
                     
                     <!-- Work 1 -->
-                    <div class="col-lg-3">
-                        <div class="workImgContainer">
-                            <!-- Work Img -->
-                            <img class="workImg" src="/img/workIcons/ritGSO_Preview.png" alt="Project ritGSO">
-                            
-                            <a href="portfolioWork/ritGSO.html" >
-                                <div class="workOverlay">
-                                    <!-- Work Icon -->
-                                    <img class="workIcon" src="/img/workIcons/ritGSO_Icon.png" alt="Project Icon ritGSO">
-                                    <h4>RIT Game Symphony Orchestra</h4>
-                                    <h5>Branding</h5>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-lg-4">
+                        <!-- Work Img -->
+                        <a href="ritgso.html">
+                            <img class="workImg" id="gsoImg" src="img/preview/gsoPreview.jpg" alt="Project ritGSO">
+                        </a>
                     </div>
-                    
+
                     <!-- Work 2 -->
-                    <div class="col-lg-3">
-                        <div class="workImgContainer">
-                            <!-- Work Img -->
-                            <img class="workImg" src="/img/workIcons/overview_Preview.png" alt="Project overview">
-                            
-                            <a href="portfolioWork/overview.html">
-                                <div class="workOverlay">
-                                    <!-- Work Icon -->
-                                    <img class="workIcon" src="/img/workIcons/overview_Icon.png" alt="Project Icon overview">
-                                    <h4>Overview</h4>
-                                    <h5>Printed Zine</h5>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-lg-4">
+                        <!-- Work Img -->
+                        <a href="pochibird.html">
+                            <img class="workImg" id="pochiImg" src="img/preview/pochiBirdPreview.jpg" alt="Project pochiBird">
+                        </a>
                     </div>
-                    
+
                     <!-- Work 3 -->
-                    <div class="col-lg-3">
-                        <div class="workImgContainer">
-                            <!-- Work Img -->
-                            <img class="workImg" src="/img/workIcons/pochiBird_Preview.png" alt="Project pochiBird">
-                            
-                            <a href="portfolioWork/pochiBird.html">
-                                <div class="workOverlay">
-                                    <!-- Work Icon -->
-                                    <img class="workIcon" src="/img/workIcons/pochiBird_Icon.png" alt="Project Icon pochiBird">
-                                    <h4>Pochi Bird</h4>
-                                    <h5>3D Model Poster</h5>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-lg-4">
+                        <!-- Work Img -->
+                        <a href="untamedZine.html">
+                            <img class="workImg" id="untamedZine" src="img/preview/untamedZinePreview.jpg" alt="Project untamedZine">
+                        </a>
                     </div>
-                    
                 </div>
-                    
+
                 <!-- Work Row 2 -->
                 <div class="row justify-content-md-center">
                     
                     <!-- Work 4 -->
-                    <div class="col-lg-3">
-                        <div class="workImgContainer">
-                            <!-- Work Img -->
-                            <img class="workImg" src="/img/workIcons/steamEngine_Preview.png" alt="Project steamEngine">
-                            
-                            <a href="portfolioWork/steamEngine.html">
-                                <div class="workOverlay">
-                                    <!-- Work Icon -->
-                                    <img class="workIcon" src="/img/workIcons/steamEngine_Icon.png" alt="Project Icon SteamEngine">
-                                    <h4>Model Steam Engine</h4>
-                                    <h5>3D Animation</h5>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-lg-4">
+                        <!-- Work Img -->
+                        <a href="corgi.html">
+                            <img class="workImg" id="corgi" src="img/preview/corgiPreview.jpg" alt="Project corgi">
+                        </a>
                     </div>
-                    
+
                     <!-- Work 5 -->
-                    <div class="col-lg-3">
-                        <div class="workImgContainer">
-                            <!-- Work Img -->
-                            <img class="workImg" src="/img/workIcons/acnh_Preview.png" alt="Project acnh">
-                            
-                            <a href="/portfolioWork/acnh.html">
-                                <div class="workOverlay">
-                                    <!-- Work Icon -->
-                                    <img class="workIcon" src="/img/workIcons/acnh_Icon.png" alt="Project Icon acnh">
-                                    <h4>Animal Crossing Microinteractions</h4>
-                                    <h5>2D Animation</h5>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="col-lg-4">
+                        <!-- Work Img -->
+                        <a href="overviewZine.html">
+                            <img class="workImg" id="overview" src="img/preview/overviewPreview.jpg" alt="Project overview">
+                        </a>
                     </div>
-                    
+
                     <!-- Work 6 -->
+                    <div class="col-lg-4">
+                        <!-- Work Img -->
+                        <a href="acnh.html">
+                            <img class="workImg" id="acnh" src="img/preview/acnhPreview.jpg" alt="Project acnh">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- View More Work -->
+                <!--
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-12">
+                        <a href="index.html"><div id="viewresumeBtn"><p>SHOW MORE</p></div></a>
+                    </div>
+                </div>
+            -->
+            </div>
+        </section>
+
+        <!-- ---------- ABOUT ME SECTION ---------- -->
+        <section id="aboutme">
+            <div class="container" id="aboutmeContent">
+                <div class="h1LineWork"></div>
+                <h1>ABOUT ME</h1>
+
+                <div class="row justify-content-md-center">
+
+                    <div class="col-lg-4">
+                        <h2>Who I am...</h2>
+                        <p>Hi, I'm Nicole Lopez! I'm a recent college graduate from Rochester Institute of Technology where I studied New Media Design with minors in the Japanese language as well as Game Design, and I'm currently searching for a full-time position in a design field starting in summer or fall 2021.</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h2>What I do...</h2>
+                        <p>I have a strong passion for design, no matter the field. My main goal is to create designs that make people happy! In other words, I want to design things that bring enjoyment to others by making things more usable, making things more fun, and of course, making things look more beautiful.</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h2>More about me...</h2>
+                        <p>I am a total nerd: I love playing tabletop games, video games, and watching Japanese anime. I also enjoy singing both American pop and Japanese pop songs, so I'm always down for karaoke! Oh, and a corgi puppy whom I named Potato recently joined my family! He is my new obsession.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- RESUME SECTION ---------- -->
+        <section id="resume">
+            <div class="container" id="resumeContent">
+                <div class="h1LineWork"></div>
+                <h1>RESUME</h1>
+
+                <div class="row justify-content-md-center">                    
                     <div class="col-lg-3">
-                        <div class="workImgContainer">
-                            <!-- Work Img -->
-                            <img class="workImg" src="/img/workIcons/personalMandala_Preview.png" alt="Project personalMandala">
+                        <a href="documents/NicoleLopez_Resume.pdf" target="_blank">
+                            <div id="viewresumeBtn">
+                                <p>VIEW RESUME PDF</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="row justify-content-md-center">                    
+                    <div class="col-lg-8">
+                        <p><strong>Email: <a href="mailto: nmlopez360@gmail.com" class="resumeLink">nmlopez360@gmail.com</a></strong></p>
+                        <p><strong>Linked In: <a href="https://www.linkedin.com/in/nmlopez360/" class="resumeLink" target="_blank">linkedin.com/in/nmlopez360</a></strong></p>
+                        <p><strong>Phone: <a href="tel:646-599-3729" class="resumeLink">1 (646) 599-3729</a></strong></p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="row justify-content-md-center">                    
+                    <div class="col-lg-8">
+
+                        <!-- --- Objective --- -->
+                        <h2>OBJECTIVE</h2>
+                        <p>I am an enthusiastic designer currently seeking a full-time position starting in summer or fall 2021 in the field of design.</p>
+
+                        <br>
+                        <br>
+
+                        <!-- --- Work Experience --- -->
+                        <h2>WORK EXPERIENCE</h2>
+                        <p style="font-weight: 700;">Playdots Inc. <span style="color: #de7866;">|</span> <span style="color: #999">New York, NY
+                            <br>
+                            May 2019 - Nov 2019</span>
+                        </p>
+                        <p><span style="font-weight: 700;">Marketing Design Contractor</span>
+                            <br>
+                            Assisted the marketing team with ideating, creating, and animating top performing advertisements and other promotional materials for the mobile game application Two Dots.
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <!-- --- Education --- -->
+                        <h2>EDUCATION</h2>
+                        <p style="font-weight: 700;">Rochester Institute of Technology <span style="color: #de7866;">|</span> <span style="color: #999">Rochester, NY
+                            <br>
+                            Aug 2016 - May 2021</span>
+                        </p>
+                        <p>New Media Design BFA <span style="color: #de7866;">|</span> <span style="font-weight: 700;">GPA:</span> 3.79 / 4.0, Dean's List 7 semesters
+                            <br>
+                            Modern Language Japanese minor
+                            <br>
+                            Game Design Minor
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <!-- --- Activities --- -->
+                        <h2>ACTIVITIES</h2>
+                        <p style="font-weight: 700;">RIT Game Symphony Orchestra <span style="color: #de7866;">|</span> <span style="color: #999">Rochester, NY
+                            <br>
+                            Sep 2018 - May 2020 | Aug 2020 - May 2021</span>
+                        </p>
+                        <p><span style="font-weight: 700;">Public Relations Officer | Vice President</span>
+                            <br>
+                            Managed club social media accounts, planned fundraising activities, and led a team of over 10 designers in creating merchandise, posters, and concert programs for events. | Managed scheduling, reservations, assisted other absent executive board members.
+                        </p>
+
+                        <br>
+
+                        <p style="font-weight: 700;">Interactive Games & Media Dept. <span style="color: #de7866;">|</span> <span style="color: #999">Rochester, NY
+                            <br>
+                            Aug 2017 - Dec 2018</span>
+                        </p>
+                        <p><span style="font-weight: 700;">Student Ambassador</span>
+                            <br>
+                            Represented and promoted majors offered by RIT’s Interactive Games and Media (IGM) Department by giving tours, participating on student panels, and hosting events for IGM students on campus.
+                        </p>
                             
-                            <a href="/portfolioWork/personalMandala.html">
-                                <div class="workOverlay">
-                                    <!-- Work Icon -->
-                                    <img class="workIcon" src="/img/workIcons/personalMandala_Icon.png" alt="Project Icon Personal Mandala">
-                                    <h4>Personal Mandala</h4>
-                                    <h5>2D Motion Graphic</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-            </div>
-            
-            <!-- --- |About Me Slide| ---  -->
-            <div class="section" id="aboutmeSection" data-anchor="aboutme">
-                <div class="container" id="aboutmeContainer">
-                    <div class="row justify-content-md-center">
-
-                        <div class="col-lg-4">
-                            <p class="aboutHeader">who i am...</p>
-                            <p>I’m a 4th year <a href="https://www.rit.edu/artdesign/study/new-media-design-bfa">New Media Design</a> student with minors in <a href="https://www.rit.edu/study/game-design-minor">Game Design</a> and the <a href="https://www.rit.edu/study/modern-language-japanese-minor">Japanese Language</a> at <a href="https://www.rit.edu/">Rochester Institute of Technology</a>, and I will be graduating in May 2021. I'm currently searching for a full-time position in a design field starting in summer 2021!</p>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <p class="aboutHeader">what i do...</p>
-                            <p>Whether it’s logos, posters, animations, websites, applications, or games, I have a strong passion to design. My main goal is to create designs that make people happy! In other words, I want to design things that bring enjoyment to others by making things more usable, making things more fun, and of course, making things look more beautiful.</p>
-                        </div>
-
-                        <div class="col-lg-4">
-                            <p class="aboutHeader">more about me...</p>
-                            <p>To be honest, I’m a little shy, but once you get to know me, I’m actually a bit of a nerd. I love playing video games and watching Japanese anime. I also enjoy singing songs in both English and Japanese, so I’m always down for a karaoke party!</p>
-                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- --- |Resume Slide| ---  -->
-            <div class="section" id="resumeSection" data-anchor="resume">
-                <div class="container" id="resumeContainer">
 
-                    <!-- Row INTRODUCTION -->
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <h1>Nicole Lopez Resume</h1>
-                        </div>
+                <br>
+                <br>
+
+                <!-- --- Skills & Tools --- -->
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-8">
+                        <h2>SKILLS & TOOLS</h2>  
                     </div>
-
-                    <!-- Row PDF BUTTON -->
-                    <div class="row justify-content-center">
-                        <a href="documents/NicoleLopez_Resume.pdf" target="_blank" id="pdfBtn">VIEW RESUME PDF</a>
-                    </div>
-
-                    <div class="row justify-content-center">
-
-                        <div class="col-sm-8 profileInfo">
-                            <p><strong>Email: </strong><a href="mailto:nmlopez360@gmail.com">nmlopez360@gmail.com</a></p>
-                            <p><strong>Linked In: </strong><a href="https://www.linkedin.com/in/nmlopez360/" target="_blank">nmlopez360</a></p>
-                            <p><strong>Phone: </strong><a href="tel:646-599-3729">(646)599-3729</a></p>
-                            <p><strong>Home: </strong>New York, NY</p>
-                        </div>
-
-                    </div>
-
-
-                    <!-- Row OBJECTIVE -->
-                    <div class="row justify-content-center">
-
-                        <div class="col-sm-8">
-
-                            <h3>objective</h3>
-                            <p>I am seeking a full-time position starting in summer 2021 in a design field that utilizes the skills I currently possess as well as challenges me with new experiences.</p>
-
-                        </div>
-                    </div>
-                    
-                    <!-- Row EXPERIENCE -->
-                    <div class="row justify-content-center">
-
-                        <div class="col-sm-8">
-
-                            <h3>work experience</h3>
-                            <p><strong>Playdots Inc. <span class="textDivider">|</span> <span class="textGrey">New York, NY
-                                <br>MAY 2019 - NOV 2019</span></strong></p>
-                            <p><strong><em>Marketing Design Contractor</em></strong></p>
-                            <p>Assisted the marketing team with ideating, creating, and animating advertisements and other promotional materials for the mobile game application Two Dots.</p>
-
-                        </div>
-                    </div>
-
-                    <!-- Row EDUCATION -->
-                    <div class="row justify-content-center">
-
-                        <div class="col-sm-8">
-
-                            <h3>education</h3>
-                            <p><strong>Rochester Institute of Technology <span class="textDivider">|</span> <span class="textGrey">Rochester, NY
-                                <br>AUG 2016 - MAY 2021</span></strong></p>
-                            <p>New Media Design B.F.A. <span class="textDivider">|</span> <strong>GPA:</strong> 3.76 / 4.0, Dean's List 7 semesters</p>
-                            <p>Modern Language Japanese Minor</p>
-                            <p>Game Design Minor</p>
-
-                        </div>
-                    </div>
-
-                    <!-- Row ACTIVITIES -->
-                    <div class="row justify-content-center">
-
-                        <div class="col-sm-8">
-
-                            <h3>activities</h3>
-                            <p><strong>RIT Game Symphony Orchestra <span class="textDivider">|</span> <span class="textGrey">Rochester, NY
-                                <br>SEP 2018 - PRESENT</span></strong></p>
-                            <p><strong><em>Public Relations Offcer | Vice President</em></strong></p>
-                            <p>Managed club social media accounts, planned fundraising activities, and lead a team of 10+ designers in creating merchandise, posters, and concert programs for events. | Managed scheduling, reservations, and assisted the president with their duties.</p>
-
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center">
-
-                        <div class="col-sm-8">
-
-                            <p><strong>Interactive Games & Media Dept. <span class="textDivider">|</span> <span class="textGrey">Rochester, NY
-                                <br>AUG 2017 - DEC 2018</span></strong></p>
-                            <p><strong><em>Student Ambassador</em></strong></p>
-                            <p>Represented and promoted majors offered by RIT’s Interactive Games and Media Department by giving tours, participating on student panels, and hosting events for IGM students on campus.</p>
-
-                        </div>
-                    </div>
-
-                    <!-- Row SKILLS & TOOLS -->
-                    <div class="row justify-content-center">
-
-                        <div class="col-sm-8">
-
-                            <h3>skills & tools</h3>
-
-                        </div>
-                    </div>
-
-                    <div class="row justify-content-center">
-
-                        <div class="col-lg-4 skillsList">
-
-                            <p><strong>Design</strong></p>
-                            <ul>
-                                <li>Adobe After Effects</li>
-                                <li>Adobe Illustrator</li>
-                                <li>Adobe InDesign</li>
-                                <li>Adobe Photoshop</li>
-                                <li>Figma</li>
-                                <li>Google Suite</li>
-                                <li>Maxon Cinema 4D</li>
-                                <li>Microsoft Office</li>
-                            </ul>
-
-                        </div>
-                        <div class="col-lg-4 skillsList">
-
-                            <p><strong>Programming</strong></p>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>Unity</li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <!-- Row INTERESTS -->
-                    <div class="row justify-content-center">
-
-                        <div class="col-sm-8">
-
-                            <h3>interests</h3>
-                            <ul>
-                                <li>Branding</li>
-                                <li>Promotion Design</li>
-                                <li>Motion Graphics</li>
-                                <li>UI / UX Design</li>
-                                <li>App Design</li>
-                                <li>Video Game UI</li>
-                                <li>Web Design</li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <!-- Row LANGUAGES -->
-                    <div class="row justify-content-center">
-
-                        <div class="col-sm-8">
-
-                            <h3>languages</h3>
-                            <ul>
-                                <li>Native English</li>
-                                <li>Conversational Japanese</li>
-                            </ul>
-
-                        </div>
-                    </div>
-
                 </div>
-                
-                <!-- --- |Footer | ---  -->
-                <footer>
-                    <div class="container">
-                        <div class="row justify-content-center">
 
-                            <div class="col-lg-12" id="footerNav">
-                                <ul>
-                                    <li><a href="mailto:nml8330@rit.edu">Email</a></li>
-                                    <li style="margin-right: 0px;"><a href="https://www.linkedin.com/in/nmlopez360/" target="_blank">LinkedIn</a></li>
-                                </ul>
-                            </div>
-
-                            <div class="col-lg-12" id="footerText">
-                                <p>💛 Thank you so much for viewing my portfolio 💛</p>
-                                <p>©Nicole Lopez 2021</p>
-                            </div>
-
-
-                        </div>
+                <div class="row justify-content-md-center">    
+                    <div class="col-lg-4">
+                        <p style="font-weight: 700;">Design</p>
+                        <ul>
+                            <li>Adobe After Effects</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe InDesign</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Figma</li>
+                            <li>G Suite</li>
+                            <li>Maxon Cinema 4D</li>
+                            <li>Microsoft Office</li>
+                        </ul>
                     </div>
-                </footer>
-                
-            </div>
+                    <div class="col-lg-4">
+                        <p style="font-weight: 700;">Programming</p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
 
-        </div>
-        
-        <!-- Fullpage Plugin Initialization -->
-        <script type="text/javascript">
-            var myFullpage = new fullpage('#fullpage', {
-                licenseKey: 'D120E67E-289C40CF-A77522C4-EAF6983D',
-                anchors: ['slideHeader', 'work', 'aboutme', 'resume'],
-                autoScrolling: true,
-                scrollOverflow: true,
-                scrollOverflowReset: true,
-                sectionsColor: ['#fefefe', '#fefefe', '#fcfcfc', 'fcfcfc'],
-                navigation:true,
-                navigationTooltips: ['hello!', 'my work', 'about me', 'my resume'],
-                
-                afterLoad: function(origin, destination, direction){
-                    var leavingSection = 'slideHeader';
-                    
-                    /* Index 0 = 'slideHeader' --> go directly to either 'aboutme' or 'resume' */
-                    if(origin.index == 0){
-                        if(destination.index == 2 || destination.index == 3) {
-                            document.getElementById('navBar').style.background = '#fcfcfc';
-                        }
-                    }
-                    /* Index 1 = 'work' --> goes down to 'aboutme' or 'resume' */
-                    if(origin.index == 1 && direction =='down'){
-                        document.getElementById('navBar').style.background = '#fcfcfc';
-                    }
-                    /* Index 2 = 'aboutme' --> goes up to 'work' or 'slideHeader'*/
-                    if(origin.index == 2 && direction == 'up'){
-                        document.getElementById('navBar').style.background = 'transparent';
-                    }
-                    /* Index 3 = 'resume' --> go directly to either 'work' or 'slideHeader'*/
-                    if(origin.index == 3){
-                        if(destination.index == 1 || destination.index == 0) {
-                            document.getElementById('navBar').style.background = 'transparent';
-                        }
-                    }
-                }
-                
-            });
-            
-        </script>
-        
+                <br>
+                <br>
+
+                <!-- --- Interests --- -->
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-8">
+                        <h2>INTERESTS</h2>
+                        <ul>
+                            <li>App Design</li>
+                            <li>Branding</li>
+                            <li>Interaction Design</li>
+                            <li>Motion Graphics</li>
+                            <li>Promotion Design</li>
+                            <li>Video Game UI</li>
+                            <li>Web Design</li>
+                        </ul>
+
+                        <br>
+                        <br>
+
+                        <!-- --- Languages --- -->
+                        <h2>LANGUAGES</h2>
+                        <ul>
+                            <li>Native English</li>
+                            <li>Conversational Japanese</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p><img src="img/heartIcon.svg" alt="<3"> Thank you so much for viewing my portfolio <img src="img/heartIcon.svg" alt="<3"></p>
+
+            <a href="#header">
+                <div id="scrollTopBtn">
+                    <p>BACK TO TOP</p>
+                </div>
+            </a>
+
+            <br>
+
+            <p style="font-weight: 300;">©Nicole Lopez 2021</p>
+        </footer>
+
 	</body>
 </html>

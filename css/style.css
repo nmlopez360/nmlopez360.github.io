@@ -1,290 +1,58 @@
+/*
+White: #fbfbfb
+Black: #222
+Yellow: #FCD79F
+Pink: #FFAB90
+
+-moz-transition: all 0.3s ease-in-out 0s;
+-ms-transition: all 0.3s ease-in-out 0s;
+-o-transition: all 0.3s ease-in-out 0s;
+-webkit-transition: all 0.3s ease-in-out 0s;
+transition: all 0.3s ease-in-out 0s;
+
+box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.2);
+
+@media screen and (orientation: portrait){
+}
+
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0px;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #fbfbfb;
+    font-weight: 400;
+    background-color: #f5f5f5;
 }
 
-.fp-tooltip {
-    font-family: 'Josefin Sans', sans-serif !important;
+/*Section Header*/
+h1 {
+    padding-left: 80px;
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 8;
 }
 
-@media screen and (orientation: portrait){
-    #fp-nav {
-        position: fixed;
-        left: calc(50% - 65px);
-        top: auto;
-        bottom: -100px;
-        width: 33px;
-        transform-origin: top left;
-        transform: rotate(-90deg);
-    }
-    
-    .fp-tooltip {
-        visibility: hidden;
-    }
-}
-
-/*Header Intro*/
-#slideHeader h1 {
-    font-size: 4em;
-    font-weight: 600;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-#slideHeader h2 {
+/*Tag Line*/
+h2 {
+    margin-top: -20px;
     font-size: 2em;
     font-weight: 400;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    color: #fbfbfb
 }
 
-/*Nav Name Logo*/
-nav h3 {
-    margin: 12px 12px 0 20px;
-    width: 220px;
-    height: 50px;
-    float: left;
-    
-    background-color: #222;
-    
-    font-size: 1.5em;
-    font-weight: 600;
+/*Scroll Down*/
+h4 {
+    margin: 15px 0px 0px -32px;
+    font-size: .8em;
+    font-weight: 700;
     text-align: center;
-    line-height: 2.3;
-    
-    color: #f5f5f5;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-nav h3:hover {
-    color: #f9c228;
-}
-
-/*Work Title & Info*/
-#workSection h4 {
-    padding: 0px 5px;
-    font-size: 1.3em;
-    font-weight: 600;
-    text-align: center;
-    color: #f5f5f5;
-}
-
-#workSection h5 {
-    padding: 0px 10px;
-    font-size: 1em;
-    font-weight: 400;
-    text-align: center;
-    color: #dddddd;
-}
-
-@media screen and (max-width: 992px){
-    #workSection h4 {
-        font-size: 2.5em;
-    }
-    
-    #workSection h5 {
-        font-size: 1.7em;
-    }
-}
-
-.fade-in {
-    animation: fadeIn ease 2s;
-    -webkit-animation: fadeIn ease 2s;
-    -moz-animation: fadeIn ease 2s;
-    -o-animation: fadeIn ease 2s;
-    -ms-animation: fadeIn ease 2s;
-}
-
-@keyframes fadeIn{
-    0% {
-        margin-top: 50px;
-        opacity:0;
-    }
-    100% {
-        margin-top: 0px;
-        opacity:1;
-    }
-}
-
-@-moz-keyframes fadeIn {
-    0% {
-        margin-top: 50px;
-        opacity:0;
-    }
-    100% {
-        margin-top: 0px;
-        opacity:1;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        margin-top: 50px;
-        opacity:0;
-    }
-    100% {
-        margin-top: 0px;
-        opacity:1;
-    }
-}
-
-@-o-keyframes fadeIn {
-    0% {
-        margin-top: 50px;
-        opacity:0;
-    }
-    100% {
-        margin-top: 0px;
-        opacity:1;
-    }
-}
-
-@-ms-keyframes fadeIn {
-    0% {
-        margin-top: 50px;
-        opacity:0;
-    }
-    100% {
-        margin-top: 0px;
-        opacity:1;
-    }
-}
-
-/* ---------- || NAVBAR || ---------- */
-
-.showDiv {
-    display: inline-block !important;
-}
-
-.noScroll {
-    overflow-y: hidden !important;
-}
-
-#navBar {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100px;
-    z-index: 99;
-    
-    -moz-transition: background-color 0.3s ease-in-out 0s;
-    -ms-transition: background-color 0.3s ease-in-out 0s;
-    -o-transition: background-color 0.3s ease-in-out 0s;
-    -webkit-transition: background-color 0.3s ease-in-out 0s;
-    transition: background-color 0.3s ease-in-out 0s;
-}
-
-nav {
-    position: absolute;
-    top: 12px;
-    left: 0px;
-    right: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1750px;
-}
-
-#navBar ul {
-    margin: 12px 0px 0px 0px;
-    padding-left: 0px;
-    list-style-type: none;
-    overflow: hidden;
-}
-
-#navBar ul li {
-    float: left;
-}
-
-#navBar ul li a {
-    position: relative;
-    display: block;
-    margin: 0px 10px;
-    padding: 10px;
-    
-    font-size: 1.25em;
-    font-weight: 400;
     color: #222;
-    text-align: center;
-    text-decoration: none;
-    line-height: 1.5;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
 
-#navBar ul li a:hover {
-    text-shadow: 0 0 .8px #222, 0 0 .8px #222;
-}
-
-.navDivider {
-    font-size: 2em;
-    font-weight: 400;
-    color: #222;
-    line-height: 1.75;
-}
-
-/* ---------- || HAMBURGER NAV MENU || ---------- */
-
-#hamburgerMenuIcon {
-    position: fixed;
-    display: none;
-    top: 20px;
-    right: 10px;
-    
-    z-index: 1000;
-}
-
-@media screen and (max-width: 768px){
-    #hamburgerMenuIcon {
-        display: inline-block;
-    }
-    
-    #navBar ul {
-        display: none;
-    }
-}
-
-#hamMenu {
-    position: fixed;
-    display: none;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    background-color: #222;
-    color: white;
-    
-    z-index: 999;
-}
-
-.hamLink {
-    display: block;
-    padding: 20px 0px;
-    
-    font-size: 1.5em;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    
     -moz-transition: color 0.3s ease-in-out 0s;
     -ms-transition: color 0.3s ease-in-out 0s;
     -o-transition: color 0.3s ease-in-out 0s;
@@ -292,265 +60,417 @@ nav {
     transition: color 0.3s ease-in-out 0s;
 }
 
-.hamLink:hover {
-    text-decoration: none;
-    color: #FFE39B;
+h4:hover {
+    color: #FFAB90;
 }
 
-#mainNavHam {
-    margin-top: 100px;
+section {
+    margin: 0px 20px;
 }
 
-/* ---------- || SLIDE 1 HEADER || ---------- */
-
-#slideHeader {
-    background-image: url(../img/headerBKG/nmlopez_HeaderBKG_LandscapeT.gif);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-@media screen and (orientation: portrait){
-    #slideHeader {
-        background-image: url(../img/headerBKG/nmlopez_HeaderBKG_PortraitT.gif);
-        background-size: cover;
-        background-position: bottom;
-        background-repeat: no-repeat;
-
-        -moz-transition: all 0.3s ease-in-out 0s;
-        -ms-transition: all 0.3s ease-in-out 0s;
-        -o-transition: all 0.3s ease-in-out 0s;
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
+@media screen and (max-width: 992px){
+    #workContent, #aboutmeContent, #resumeContent {
+        padding: 30px;
     }
 }
 
-#headerText {
-    position: absolute;
-    top: 40%;
+@media screen and (max-width: 767px){
+    h2 {
+        font-size: 1.2em;
+    }
+
+    #headerContent {
+        width: 400px !important;
+    }
+}
+
+/* ---------- NAVIGATION MENU --------- */
+nav {
+    position: fixed;
     left: 0px;
     right: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 25px;
-    width: 650px;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-@media screen and (max-width: 768px){
-    #slideHeader h1 {
-        font-size: 2em;
-    }
-    
-    #slideHeader h2 {
-        font-size: 1em;
-    }
-    
-    #headerText {
-        top: 45%;
-        width: 350px;
-    }
-}
-
-/* ---------- || SLIDE 2 WORK || ---------- */
-
-#workSection {
-    background-image: url(../img/headerBKG/nmlopez_HeaderBKG_LandscapeB.gif);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-@media screen and (orientation: portrait){
-    #workSection {
-        background-image: url(../img/headerBKG/nmlopez_HeaderBKG_PortraitB.gif);
-        background-size: cover;
-        background-position: top;
-        background-repeat: no-repeat;
-
-        -moz-transition: all 0.3s ease-in-out 0s;
-        -ms-transition: all 0.3s ease-in-out 0s;
-        -o-transition: all 0.3s ease-in-out 0s;
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
-    }
-}
-
-#workContainer {
-    margin-top: 100px;
-}
-
-@media screen and (max-width: 768px){
-    #workContainer {
-        padding-bottom: 100px;
-    }
-}
-
-.workImgContainer {
-    margin: 15px 0px;
+    margin: 0 auto;
     width: 100%;
+    max-width: 1200px;
+    height: 90px;
+    z-index: 99;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20px 0px 0px 20px;
+    padding: 0;
     overflow: hidden;
-    
-    background-color: blue;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 16px;
+
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+
+    -moz-transition: color 0.3s ease-in-out 0s;
+    -ms-transition: color 0.3s ease-in-out 0s;
+    -o-transition: color 0.3s ease-in-out 0s;
+    -webkit-transition: color 0.3s ease-in-out 0s;
+    transition: color 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover {
+    color: #FFAB90;
+}
+
+.whiteLinkHover:hover {
+    color: #fbfbfb !important;
+}
+
+@media screen and (max-width: 767px){
+    #navLogo {
+        margin-right: 10px !important;
+    }
+
+    nav ul li a {
+        font-size: 0.6em;
+        line-height: 1;
+    }
+}
+
+#navLogo {
+    margin-right: 20px;
+    border: 3px solid #222;
+
+    -moz-transition: background-color 0.3s ease-in-out 0s;
+    -ms-transition: background-color 0.3s ease-in-out 0s;
+    -o-transition: background-color 0.3s ease-in-out 0s;
+    -webkit-transition: background-color 0.3s ease-in-out 0s;
+    transition: background-color 0.3s ease-in-out 0s;
+}
+
+#navLogo:hover {
+    background-color: #222;
+    color: #fbfbfb;
+}
+
+.navLink {
+    line-height: 1.4;
+}
+
+.navSlash {
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+/* ---------- HEADER SECTION --------- */
+#header {
+    position: relative;
+    height: 100vh;
+
+    -moz-transition: height 0.5s ease-in-out 0s;
+    -ms-transition: height 0.5s ease-in-out 0s;
+    -o-transition: height 0.5s ease-in-out 0s;
+    -webkit-transition: height 0.5s ease-in-out 0s;
+    transition: height 0.5s ease-in-out 0s;
+}
+
+#headerContent{
+    position: absolute;
+    display: block;
+    left: 0px;
+    right: 0px;
+    margin: 150px auto 0px auto;
+    width: 650px;
+    height: 250px;
+    opacity: 1;
+
+    -moz-transition: opacity 0.1s ease-in-out 0s;
+    -ms-transition: opacity 0.1s ease-in-out 0s;
+    -o-transition: opacity 0.1s ease-in-out 0s;
+    -webkit-transition: opacity 0.1s ease-in-out 0s;
+    transition: opacity 0.1s ease-in-out 0s;
+}
+
+#headerBKG {
+    position: fixed;
+    display: block;
+    top: 0px;
+    margin: 90px 0px 0px -20px;
+    width: calc(100% + 40px);
+    height: 300px;
+    background: linear-gradient(-45deg, rgba(252, 215, 159) 0%, rgba(255, 171, 144) 100%);
+
+    -moz-transition: top 0.5s ease-in-out 0s, height 0.5s ease-in-out 0s;
+    -ms-transition: top 0.5s ease-in-out 0s, height 0.5s ease-in-out 0s;
+    -o-transition: top 0.5s ease-in-out 0s, height 0.5s ease-in-out 0s;
+    -webkit-transition: top 0.5s ease-in-out 0s, height 0.5s ease-in-out 0s;
+    transition: top 0.5s ease-in-out 0s, height 0.5s ease-in-out 0s;
+}
+
+.h1Line {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    border-bottom: 2px solid #222;
+}
+
+/* Scroll Down Icon */
+
+.scrollLine {
+    position: absolute;
+    top: 360px;
+    left: 50%;
+    width: 1px;
+    height: 60px;
+    border-left: 3px solid #222;
+}
+
+#scrollDownAni {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+
+    -moz-transition: left 0.5s ease-in-out 0s, opacity 0.1s ease-in-out 0s;
+    -ms-transition: left 0.5s ease-in-out 0s, opacity 0.1s ease-in-out 0s;
+    -o-transition: left 0.5s ease-in-out 0s, opacity 0.1s ease-in-out 0s;
+    -webkit-transition: left 0.5s ease-in-out 0s, opacity 0.1s ease-in-out 0s;
+    transition: left 0.5s ease-in-out 0s, opacity 0.1s ease-in-out 0s;
+}
+
+#scrollDown {
+    position: absolute;
+    top: 420px;
+    left: calc(50% - 17.5px);
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(100px);
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(100px);
+    }
+  }
+svg #wheel {
+    -webkit-animation: scroll ease 1.5s infinite;
+    animation: scroll ease 1.5s infinite;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* ---------- WORK SECTION --------- */
+
+#work {
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    padding: 100px 0px 0px;
+    background-color: #fdfdfd;
+}
+
+.h1LineWork {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    border-bottom: 2px solid #222;
+}
+
+#workContent{
+    width: 100%;
+    max-width: 1160px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+#work .row {
+    margin: 25px 0px;
+}
+
+@media screen and (max-width: 992px){
+    .col-lg-4 {
+        margin-bottom: 50px;
+    }
 }
 
 .workImg {
     width: 100%;
-    overflow: hidden;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
 }
 
-.workOverlay {
-    position: absolute;
-    background-color: rgb(0, 0, 0, .4);
-    opacity: 0;
-    
-    z-index: 2;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.workOverlay:hover .workImg {
-    transform: scale(1.2);
-}
-
-.workOverlay:hover {
-    opacity: 1;
-}
-
-
-.workIcon {
-    margin: 10% 0px 10% 32.5%;
-    width: 35%;
-}
-
-/* ---------- || SLIDE 3 ABOUT ME || ---------- */
-@media screen and (max-width: 768px){
-    #aboutmeContainer {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-}
-    
-.aboutHeader {
-    font-size: 2em;
-    font-weight: 600;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-#aboutmeSection p {
-    font-weight: 400;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-#aboutmeSection a {
-    font-weight: 600;
-    color: #e6b122;
-    
-    -moz-transition: all 0.3s ease-in-out 0s;
-    -ms-transition: all 0.3s ease-in-out 0s;
-    -o-transition: all 0.3s ease-in-out 0s;
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-#aboutmeSection a:hover {
-    color: #000000;
+#work a {
     text-decoration: none;
 }
 
-.col-lg-4 {
-    padding: 0px 30px;
-}
+/* ---------- ABOUT ME SECTION --------- */
 
-
-/* ---------- || FOOTER || ---------- */
-
-footer {
+#aboutme {
     position: relative;
     width: 100%;
-    height: 250px;
-    margin-top: 100px;
-    background-color: #222;
-    text-align: center;
-    color: white;
+    margin-left: 0px;
+    padding-top: 100px;
 }
 
-@media screen and (orientation: portrait){
-    #footerText {
-        font-size: 0.8em;
-    }
-}
-
-#footerNav ul {
-    position: relative;
-    width: 165px;
-    left: 10px;
+#aboutmeContent{
+    width: 100%;
+    max-width: 1160px;
+    left: 0px;
     right: 0px;
-    margin: 35px auto 35px auto;
-    padding: 0px;
-    list-style-type: none;
-    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 100px;
 }
 
-#footerNav ul li {
-    float: left;
-    margin: 0 10px;
+#aboutme h2 {
+    color: #222;
 }
 
-#footerNav ul li a {
-    display: block;
-    padding: 10px 10px;
-    background-color: #111;
+/* ---------- RESUME SECTION --------- */
+
+#resume {
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 100px;
+    background-color: #fefefe;
+}
+
+#resumeContent{
+    width: 100%;
+    max-width: 1160px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#viewresumeBtn {
+    width: 100%;
+    padding: 0px 10px;
+    background: linear-gradient(-45deg, rgba(252, 215, 159) 0%, rgba(255, 171, 144) 100%);
+
+    font-weight: 700 !important;
+    color: #222;
     text-align: center;
-    font-size: .8em;
-    font-weight: 600;
-    color: white;
-    
-    -moz-transition: color 0.3s ease-in-out;
-    -ms-transition: color 0.3s ease-in-out;
-    -o-transition: color 0.3s ease-in-out;
-    -webkit-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
+    line-height: 4;
+
+    -moz-transition: color 0.3s ease-in-out 0s;
+    -ms-transition: color 0.3s ease-in-out 0s;
+    -o-transition: color 0.3s ease-in-out 0s;
+    -webkit-transition: color 0.3s ease-in-out 0s;
+    transition: color 0.3s ease-in-out 0s;
 }
 
-#footerNav ul li a:hover {
+#viewresumeBtn:hover {
+    color: white;
+}
+
+#viewresumeBtn p {
+    font-weight: 700 !important;
+}
+
+#resume a {
+    font-weight: 700 !important;
     text-decoration: none;
-    color: #f9c228;
+}
+
+.resumeLink {
+    color: #ffab90;
+    text-decoration: underline !important;
+
+    -moz-transition: color 0.3s ease-in-out 0s;
+    -ms-transition: color 0.3s ease-in-out 0s;
+    -o-transition: color 0.3s ease-in-out 0s;
+    -webkit-transition: color 0.3s ease-in-out 0s;
+    transition: color 0.3s ease-in-out 0s;
+}
+
+.resumeLink:hover {
+    color: #de7866;
+    text-decoration: underline !important;
+}
+
+#resume h2 {
+    color: #ffab90;
+    font-weight: 700;;
+}
+
+#resume p {
+    font-weight: 300;
+}
+
+#resume ul li {
+    font-weight: 300;
+}
+
+/* ---------- FOOTER --------- */
+footer {
+    position: absolute;
+    padding-top: 50px;
+    width: 100%;
+    height: 300px;
+    background-color: #222;
+
+    font-weight: 700;
+    color: #eee;
+    text-align: center;
+}
+
+#scrollTopBtn {
+    width: 150px;
+    margin: 25px auto -10px auto;
+    padding: 0px 10px;
+    background: linear-gradient(-45deg, rgba(252, 215, 159) 0%, rgba(255, 171, 144) 100%);
+
+    font-weight: 700 !important;
+    color: #222;
+    text-align: center;
+    line-height: 4;
+
+    -moz-transition: color 0.3s ease-in-out 0s;
+    -ms-transition: color 0.3s ease-in-out 0s;
+    -o-transition: color 0.3s ease-in-out 0s;
+    -webkit-transition: color 0.3s ease-in-out 0s;
+    transition: color 0.3s ease-in-out 0s;
+}
+
+#scrollTopBtn:hover {
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+/* ---------- PROJECT PAGES --------- */
+.projectHeader {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.projectFinal {
+    width: 100%;
+    margin-bottom: 25px;
+    box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.2);
 }

@@ -1,47 +1,90 @@
-// ---------- Toggle Menu Extras ----------
-function showDiv() {
-    $(".hamburger").toggleClass('is-active');
-    $('#hamMenu').toggleClass('showDiv'); // toggle show div class on button click
-    $('body').toggleClass('noScroll');
-    /*$('#hamburgerMenuIcon').toggleClass('iconRight');*/
+window.onscroll = function (e) {
+    if(window.pageYOffset > 0) {
+        document.getElementById('headerContent').style.opacity = 0;
+        document.getElementById('scrollDownAni').style.opacity = 0;
+        document.getElementById('headerBKG').style.height = 100 + 'px';
+        document.getElementById('headerBKG').style.top = -100 + 'px';
+        document.getElementById('headerBKG').style.zIndex = 98;
+        $('.navLink').addClass('whiteLinkHover');
+    }
+    else {
+        $('.navLink').removeClass('whiteLinkHover');
+        document.getElementById('headerBKG').style.height = 300 + 'px';
+        document.getElementById('headerBKG').style.top = 0 + 'px';
+        document.getElementById('headerBKG').style.zIndex = 0;
+        setTimeout(function () {
+            document.getElementById('headerContent').style.opacity = 1;
+            document.getElementById('scrollDownAni').style.opacity = 1;
+        }, 150);
+    }
 }
 
-// ---------- When Menu is open, hide it when window resizes ----------
-$(window).resize(function () {
-    if ($(window).width() >= 576 // check for window width is greater than 576px
-       && $('#hamMenu').hasClass('showDiv')
-       && $('body').hasClass('noScroll'))
-    {
-        $('#hamMenu').removeClass('showDiv');
-        $('.hamburger').removeClass('is-active');
-        $('body').removeClass('noScroll');
-    }
-});
 
-// ---------- Toggle Menu On Link Click ----------
-$(document).ready(function() {
-    $('.hamLink').click(function() {
-        $('#hamMenu').removeClass('showDiv');
-        $('.hamburger').removeClass('is-active');
-        $('body').removeClass('noScroll');
-    });
-});
+$(document).ready(function()
+{
+    $("#gsoImg").hover(
+        function()
+        {
+            $(this).attr("src", "../img/preview/gsoPreviewAni.gif");
+        },
+        function()
+        {
+            $(this).attr("src", "../img/preview/gsoPreview.jpg");
+        }
+    );
 
-// ---------- Always set width and height of work overlay to that of the container ----------
-$(document).ready(function() {
-    var workColWidth = $('.col-lg-3').width();
-    $('.workImgContainer').css({'height':workColWidth+'px'});
-
-    $('.workOverlay').css({'width':workColWidth+'px'});
-    $('.workOverlay').css({'height':workColWidth+'px'});
-    $('.workOverlay').css({'marginTop':'-'+workColWidth+'px'});  
-});
-
-$(window).resize(function () {
-    var workColWidth = $('.col-lg-3').width();
-    $('.workImgContainer').css({'height':workColWidth+'px'});
+    $("#pochiImg").hover(
+        function()
+        {
+            $(this).attr("src", "../img/preview/pochiBirdPreviewAni.gif");
+        },
+        function()
+        {
+            $(this).attr("src", "../img/preview/pochiBirdPreview.jpg");
+        }                         
+    );
     
-    $('.workOverlay').css({'width':workColWidth+'px'});
-    $('.workOverlay').css({'height':workColWidth+'px'});
-    $('.workOverlay').css({'marginTop':'-'+workColWidth+'px'});
+    $("#untamedZine").hover(
+        function()
+        {
+            $(this).attr("src", "../img/preview/untamedZinePreviewAni.gif");
+        },
+        function()
+        {
+            $(this).attr("src", "../img/preview/untamedZinePreview.jpg");
+        }                         
+    );
+
+    $("#corgi").hover(
+        function()
+        {
+            $(this).attr("src", "../img/preview/corgiPreviewAni.gif");
+        },
+        function()
+        {
+            $(this).attr("src", "../img/preview/corgiPreview.jpg");
+        }                         
+    );
+
+    $("#overview").hover(
+        function()
+        {
+            $(this).attr("src", "../img/preview/overviewPreviewAni.gif");
+        },
+        function()
+        {
+            $(this).attr("src", "../img/preview/overviewPreview.jpg");
+        }                         
+    );
+
+    $("#acnh").hover(
+        function()
+        {
+            $(this).attr("src", "../img/preview/acnhPreviewAni.gif");
+        },
+        function()
+        {
+            $(this).attr("src", "../img/preview/acnhPreview.jpg");
+        }                         
+    );
 });
