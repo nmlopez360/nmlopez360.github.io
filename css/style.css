@@ -87,12 +87,12 @@ section {
 
 @media screen and (max-width: 576px){
     h2 {
-        font-size: 1em;
-        line-height: 1;
+        font-size: 1.1em;
+        line-height: 1.5;
     }
 
     #headerContent {
-        width: 300px !important;
+        width: 325px !important;
     }
 }
 
