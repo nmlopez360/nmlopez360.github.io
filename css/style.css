@@ -87,7 +87,12 @@ section {
 
 @media screen and (max-width: 576px){
     h2 {
-        font-size: .9em;
+        font-size: 1em;
+        line-height: 1;
+    }
+
+    #headerContent {
+        width: 300px !important;
     }
 }
 
@@ -167,6 +172,7 @@ nav ul li a:hover {
 
     .navSlash {
         font-size: 1em;
+        line-height: 1;
     }
 }
 
@@ -486,6 +492,21 @@ footer {
 
 footer a {
     text-decoration: none;
+}
+
+footer p a {
+    color: #de7866;
+    text-decoration: none;
+
+    -moz-transition: color 0.3s ease-in-out 0s;
+    -ms-transition: color 0.3s ease-in-out 0s;
+    -o-transition: color 0.3s ease-in-out 0s;
+    -webkit-transition: color 0.3s ease-in-out 0s;
+    transition: color 0.3s ease-in-out 0s;
+}
+
+footer p a:hover {
+    color: white;
 }
 
 
