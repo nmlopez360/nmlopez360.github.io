@@ -33,8 +33,10 @@
     
 	<body>
         <!-- ---------- SCRIPTS ---------- -->
-        <!-- Bootstrap JS -->
+
+        <!-- Bootstrap JS 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        -->
 
         <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,323 +45,192 @@
         <script src="/js/main.js"></script>
 
         <!-- ---------- NAVIGATION MENU ---------- -->
+        <img id="borderSparkle" src="img/branding/Sparkle.svg">
+
+        <div id="topBar"></div>
         <nav>
             <ul>
-                <li><a href="index.html" id="navLogo">NICOLE LOPEZ</a></li>
-                <li><a href="#work" class="navLink scrolling">WORK</a></li>
-                <li><p class="navSlash">/</p></li>
-                <li><a href="#aboutme" class="navLink">ABOUT ME</a></li>
-                <li><p class="navSlash">/</p></li>
-                <li><a href="#resume" class="navLink">RESUME</a></li>
+                <li style="float:left"><a href="index.html"><img id="nmlIcon" src="img/branding/NicoleLopez_Icon-Square.svg"></a></li>
+                <li><a href="#resume">RESUME</a></li>
+                <li><p class="navSlash">|</p></li>
+                <li><a href="#aboutme">ABOUT ME</a></li>
+                <li><p class="navSlash">|</p></li>
+                <li><a href="#work">WORK</a></li>
             </ul>
         </nav>
 
-        <!-- ---------- HEADER SECTION ---------- -->
-        <section id="header">
+        <div id="border">
 
-            <!-- --- Header Background Gradient --- -->
-            <div id="headerBKG"></div>
+            <!-- ---------- HEADER ---------- -->
+            <header id="home">
+                <img id="nmlIntro" src="img/branding/NicoleLopez_Intro.svg">
+            </header>
+    
 
-            <!-- --- Header Content --- -->
-            <div id="headerContent">
-                <div class="h1Line"></div>
-                <h1>HI, I'M NICOLE!</h1>
-                <h2>I am a <span style="font-weight: 700; color: #222;">Visual & Interactive Designer</span> who aims to spread <span style="font-weight: 700;">happiness</span> through design <img src="img/heartIcon.svg" alt="<3"> </h2>
-            </div>
 
-            <!-- --- Scroll Down Animation --- -->
-            <div id="scrollDownAni">
-                <div class="scrollLine"></div>
-                <a href="#work">    
-                    <div id="scrollDown">
-                        <svg width="40px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-                            <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:#222;stroke-width:20px;"/>
-                            <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" style="fill:none;stroke:#222;stroke-width:20px;"/>
-                        </svg>
-                        <h4>SCROLL DOWN</h4>
-                    </div>
-                </a>
-            </div>
 
-        </section>
 
-        <br>
-        <br>
+            <!-- ---------- WORK SECTION ---------- -->
+            <section id="work">
+                <ul>
+                    <a href="/work/twodots.html">
+                        <li>
+                            <div class="workImg" id="twoDots"></div>
+                            <br>
+                            <h2>Two Dots</h2>
+                        </li>
+                    </a>
 
-        <!-- ---------- WORK SECTION ---------- -->
-        <section id="work">
-            <div class="container" id="workContent">
-                <div class="h1LineWork"></div>
-                <h1>MY WORK</h1> 
+                    <a href="#">
+                        <li>
+                            <div class="workImg" id="orchestra"></div>
+                            <br>
+                            <h2>The Anatomy of the Symphony Orchestra</h2>
+                        </li>
+                    </a>
 
-                <!-- Work Row 1 -->
-                <div class="row justify-content-md-center">
+                    <a href="#">
+                        <li>
+                            <div class="workImg" id="ritGSO"></div>
+                            <br>
+                            <h2>RIT Game Symphony Orchestra</h2>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li>
+                            <div class="workImg" id="mandala"></div>
+                            <br>
+                            <h2>Personal Mandala</h2>
+                        </li>
+                    </a>
+
+                    <a href="#">
+                        <li>
+                            <div class="workImg" id="jubeat"></div>
+                            <br>
+                            <h2>Jubeat Ver. 10</h2>
+                        </li>
+                    </a>
+                </ul>
+
+                <!-- WORK FLIP SIDE-->
+                <!-- <a href="#"><div id="flipSide"><h2>FLIP SIDE</h2></div></a> -->
+
+            </section>
+    
+
+
+    
+            <!-- ---------- ABOUT ME SECTION ---------- -->
+            <section id="aboutme">
+                <div class="contentColumn">
+                    <img id="nmlPfp" src="img/branding/NicoleLopez_IconPfp.svg">
+                    <h1>Who I am</h1>
+                    <p>Hi, I'm Nicole Lopez, and I’m a marketing and interactive designer! I’ve been working at Playdots, a mobile game company under Zynga and Take-Two Interactive, as a marketing designer. Before that, I was graduated from Rochester Institute of Technology in 2021 where I studied New Media Design with minors in the Japanese language as well as Game Design. <span style="color: #F77F64"> I'm searching for a new full-time position in the field of design and am available to start in January 2023.</span></p>
+                    <br>
+                    <h1>What I do</h1>
+                    <p>I have a strong passion for design, no matter the field. My main goal is to create designs that make people happy! In other words, I want to design things that bring enjoyment to others by making things more usable, making things more fun, and of course, making things look more beautiful.</p>
+                    <br>
+                    <h1>More about me</h1>
+                    <p>I am a total nerd: I love playing tabletop games, video games, and watching Japanese anime. I also enjoy singing both American pop and Japanese pop songs, so I'm always down for karaoke!</p>
+                </div>
+            </section>
+            
+            <!-- ---------- RESUME SECTION ---------- -->
+            <section id="resume">
+                <a href="/documents/NicoleLopez_Resume.pdf" target="_blank"><div id="resumePDF"><h2>VIEW RESUME PDF</h2></div></a>
+                <div class="contentColumn">
+                    <br>
+                    <br>
+                    <br>
+                    <p><span style="font-weight: 700; color: #222;">Email:</span> <a href="mailto:nmlopez360@gmail.com">nmlopez360@gmail.com</a></p>
+                    <p><span style="font-weight: 700; color: #222;">Linked In:</span> <a href="https://www.linkedin.com/in/nmlopez360/">www.linkedin.com/in/nmlopez360/</a></p>
+                    <p><span style="font-weight: 700; color: #222;">Phone:</span> <a href="tel:6465993729">1 (646) 599-3729</a></p>
+
+                    <br>
+                    <h3>OBJECTIVE</h3>
+                    <p style="font-weight: 300; color: #222;">I am an enthusiastic designer currently seeking a full-time position in the field of design.</p>
+                    <br>
+
+                    <h3>WORK EXPERIENCE</h3>
+
+                    <p><span style="font-weight: 700; color: #222;">Take-Two Interactive Software, Inc.</span><span style="font-weight: 700; color: #F77F64"> | </span>New York, NY<br>May 2019 - Nov 2019 | Aug 2021 - Jan 2023</p>
+                    <p><span style="font-weight: 700; color: #222;">Marketing Design Contractor / Junior Marketing Designer</span></p>
+                    <p style="font-weight: 300;">Ideated and animated top-performing advertisements and other promotional materials for the mobile game application "Two Dots" as part of the Playdots Inc. marketing team under Zynga.</p>
+                    <br>
+                    <p><span style="font-weight: 700; color: #222;">Self-Employed Zine Work</span><span style="font-weight: 700; color: #F77F64"> | </span>Remote<br>Jan 2021 - Current</p>
+                    <p><span style="font-weight: 700; color: #222;">Graphic Design & Layout Moderator</span></p>
+                    <p style="font-weight: 300;">Assisted/Assisting in the moderation and creation of promotional content and layout graphics for various fan-produced collaborative fanzines including:</p>
+                    <ul>
+                        <li><p><span style="font-weight: 700; color: #222;">Untamed: A FFXIV Creature Zine</span><br>Jan 2021 - Apr 2021</p></li>
+                        <li style="list-style-type: none;"><p style="font-weight: 300; color: #222;">Designed logo, announcement graphics/animations, and product bundle graphics for a 150+ page zine that sold over 550 copies.</p></li>
+                    </ul>
+                    <ul>
+                        <li><p><span style="font-weight: 700; color: #222;">Poison Apple Zine</span><br>Feb 2022 - Oct 2022</p></li>
+                        <li style="list-style-type: none;"><p style="font-weight: 300; color: #222;">Created announcement videos, promotional materials, and other graphics for a 60+ contributor fully-funded zine project on Kickstarter.</p></li>
+                    </ul>
+
+                    <br>
+                    <h3>EDUCATION</h3>
+                    <p><span style="font-weight: 700; color: #222;">Rochester Institute of Technology</span><span style="font-weight: 700; color: #F77F64"> | </span>Rochester, NY<br>Aug 2016 - May 2021</p>
+                    <p style="font-weight: 300; color: #222;">New Media Design BFA<span style="font-weight: 700; color: #F77F64"> | </span><span style="font-weight: 400; color: #222;">GPA:</span> 3.79 / 4.0, Dean's List 7 semesters<br>Modern Language Japanese Minor<br>Game Design Minor</p>
                     
-                    <!-- Work 1 -->
-                    <div class="col-lg-4">
-                        <!-- Work Img -->
-                        <a href="ritgso.html">
-                            <img class="workImg" id="gsoImg" src="img/preview/gsoPreview.jpg" alt="Project ritGSO">
-                        </a>
-                    </div>
+                    <br>
+                    <h3>ACTIVITIES</h3>
+                    <p><span style="font-weight: 700; color: #222;">RIT Game Symphony Orchestra</span><span style="font-weight: 700; color: #F77F64"> | </span>Rochester, NY<br>Sep 2018 - May 2020</p>
+                    <p><span style="font-weight: 700; color: #222;">Public Relations Officer</span></p>
+                    <p style="font-weight: 300; color: #222;">Managed club social media accounts, planned fundraising activities, and led a team of over 10 designers in creating merchandise, posters, and concert programs for events.</p>
 
-                    <!-- Work 2 -->
-                    <div class="col-lg-4">
-                        <!-- Work Img -->
-                        <a href="pochibird.html">
-                            <img class="workImg" id="pochiImg" src="img/preview/pochiBirdPreview.jpg" alt="Project pochiBird">
-                        </a>
-                    </div>
+                    <br>
+                    <h3>SKILLS & TOOLS</h3>
+                    <p style="font-weight: 700; color: #222;">DESIGN</p>
+                    <ul class="skillsTools">
+                        <li>Adobe After Effects</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe InDesign</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Figma</li>
+                        <li>G Suite</li>
+                        <li>Maxon Cinema 4D</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                    <p style="font-weight: 700; color: #222;">PROGRAMMING</p>
+                    <ul class="skillsTools">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
 
-                    <!-- Work 3 -->
-                    <div class="col-lg-4">
-                        <!-- Work Img -->
-                        <a href="untamedzine.html">
-                            <img class="workImg" id="untamedZine" src="img/preview/untamedZinePreview.jpg" alt="Project untamedZine">
-                        </a>
-                    </div>
+                    <br>
+                    <h3>INTERESTS</h3>
+                    <ul class="skillsTools">
+                        <li>Branding</li>
+                        <li>Graphic Design</li>
+                        <li>Interaction Design</li>
+                        <li>Marketing Design</li>
+                        <li>Motion Graphics</li>
+                        <li>Print/Layout Design</li>
+                        <li>UI/UX Design</li>
+                        <li>Web Design</li>
+                    </ul>
+
+                    <br>
+                    <h3>LANGUAGES</h3>
+                    <ul class="skillsTools">
+                        <li>Native English</li>
+                        <li>Conversational Japanese</li>
+                    </ul>
+
+                    <br>
+                    <br>
+                    <p><a href="#home">↑ scroll back to top ↑</a></p>
                 </div>
-
-                <!-- Work Row 2 -->
-                <div class="row justify-content-md-center">
-                    
-                    <!-- Work 4 -->
-                    <div class="col-lg-4">
-                        <!-- Work Img -->
-                        <a href="corgi.html">
-                            <img class="workImg" id="corgi" src="img/preview/corgiPreview.jpg" alt="Project corgi">
-                        </a>
-                    </div>
-
-                    <!-- Work 5 -->
-                    <div class="col-lg-4">
-                        <!-- Work Img -->
-                        <a href="overviewzine.html">
-                            <img class="workImg" id="overview" src="img/preview/overviewPreview.jpg" alt="Project overview">
-                        </a>
-                    </div>
-
-                    <!-- Work 6 -->
-                    <div class="col-lg-4">
-                        <!-- Work Img -->
-                        <a href="acnh.html">
-                            <img class="workImg" id="acnh" src="img/preview/acnhPreview.jpg" alt="Project acnh">
-                        </a>
-                    </div>
-                </div>
-
-                <!-- View More Work -->
-                <!--
-                <div class="row justify-content-md-center">
-                    <div class="col-lg-12">
-                        <a href="index.html"><div id="viewresumeBtn"><p>SHOW MORE</p></div></a>
-                    </div>
-                </div>
-            -->
-            </div>
-        </section>
-
-        <!-- ---------- ABOUT ME SECTION ---------- -->
-        <section id="aboutme">
-            <div class="container" id="aboutmeContent">
-                <div class="h1LineWork"></div>
-                <h1>ABOUT ME</h1>
-
-                <div class="row justify-content-md-center">
-
-                    <div class="col-lg-4">
-                        <h2>Who I am...</h2>
-                        <p>Hi, I'm Nicole Lopez, and I’m an aspiring User Interface designer! I graduated from Rochester Institute of Technology in 2021 where I studied New Media Design with minors in the Japanese language as well as Game Design. I'm currently searching for a full-time position in a design field and am available to start at any time.</p>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <h2>What I do...</h2>
-                        <p>I have a strong passion for design, no matter the field. My main goal is to create designs that make people happy! In other words, I want to design things that bring enjoyment to others by making things more usable, making things more fun, and of course, making things look more beautiful.</p>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <h2>More about me...</h2>
-                        <p>I am a total nerd: I love playing tabletop games, video games, and watching Japanese anime. I also enjoy singing both American pop and Japanese pop songs, so I'm always down for karaoke!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ---------- RESUME SECTION ---------- -->
-        <section id="resume">
-            <div class="container" id="resumeContent">
-                <div class="h1LineWork"></div>
-                <h1>RESUME</h1>
-
-                <div class="row justify-content-md-center">                    
-                    <div class="col-lg-3">
-                        <a href="documents/NicoleLopez_Resume.pdf" target="_blank">
-                            <div id="viewresumeBtn">
-                                <p>VIEW RESUME PDF</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <br>
-                <br>
-                <br>
-
-                <div class="row justify-content-md-center">                    
-                    <div class="col-lg-8">
-                        <p><strong>Email: <a href="mailto: nmlopez360@gmail.com" class="resumeLink">nmlopez360@gmail.com</a></strong></p>
-                        <p><strong>Linked In: <a href="https://www.linkedin.com/in/nmlopez360/" class="resumeLink" target="_blank">linkedin.com/in/nmlopez360</a></strong></p>
-                        <p><strong>Phone: <a href="tel:646-599-3729" class="resumeLink">1 (646) 599-3729</a></strong></p>
-                    </div>
-                </div>
-
-                <br>
-                <br>
-                <br>
-
-                <div class="row justify-content-md-center">                    
-                    <div class="col-lg-8">
-
-                        <!-- --- Objective --- -->
-                        <h2>OBJECTIVE</h2>
-                        <p>I am an enthusiastic designer currently seeking a full-time position in the field of design. I am available to start at any time.</p>
-
-                        <br>
-                        <br>
-
-                        <!-- --- Work Experience --- -->
-                        <h2>WORK EXPERIENCE</h2>
-                        <p style="font-weight: 700;">Playdots Inc. <span style="color: #de7866;">|</span> <span style="color: #999">New York, NY
-                            <br>
-                            May 2019 - Nov 2019 | Aug 2021 - Current</span>
-                        </p>
-                        <p><span style="font-weight: 700;">Marketing Design Contractor</span>
-                            <br>
-                            Assists the marketing team with ideating, creating, and animating top performing advertisements and other promotional materials for the mobile game application Two Dots.
-                        </p>
-
-                        <br>
-                        <br>
-
-                        <!-- --- Education --- -->
-                        <h2>EDUCATION</h2>
-                        <p style="font-weight: 700;">Rochester Institute of Technology <span style="color: #de7866;">|</span> <span style="color: #999">Rochester, NY
-                            <br>
-                            Aug 2016 - May 2021</span>
-                        </p>
-                        <p>New Media Design BFA <span style="color: #de7866;">|</span> <span style="font-weight: 700;">GPA:</span> 3.79 / 4.0, Dean's List 7 semesters
-                            <br>
-                            Modern Language Japanese minor
-                            <br>
-                            Game Design Minor
-                        </p>
-
-                        <br>
-                        <br>
-
-                        <!-- --- Activities --- -->
-                        <h2>ACTIVITIES</h2>
-                        <p style="font-weight: 700;">RIT Game Symphony Orchestra <span style="color: #de7866;">|</span> <span style="color: #999">Rochester, NY
-                            <br>
-                            Sep 2018 - May 2020 | Aug 2020 - May 2021</span>
-                        </p>
-                        <p><span style="font-weight: 700;">Public Relations Officer | Vice President</span>
-                            <br>
-                            Managed club social media accounts, planned fundraising activities, and led a team of over 10 designers in creating merchandise, posters, and concert programs for events. | Managed scheduling, reservations, assisted other absent executive board members.
-                        </p>
-
-                        <br>
-
-                        <p style="font-weight: 700;">Interactive Games & Media Dept. <span style="color: #de7866;">|</span> <span style="color: #999">Rochester, NY
-                            <br>
-                            Aug 2017 - Dec 2018</span>
-                        </p>
-                        <p><span style="font-weight: 700;">Student Ambassador</span>
-                            <br>
-                            Represented and promoted majors offered by RIT’s Interactive Games and Media (IGM) Department by giving tours, participating on student panels, and hosting events for IGM students on campus.
-                        </p>
-                            
-                    </div>
-                </div>
-
-                <br>
-                <br>
-
-                <!-- --- Skills & Tools --- -->
-                <div class="row justify-content-md-center">
-                    <div class="col-lg-8">
-                        <h2>SKILLS & TOOLS</h2>  
-                    </div>
-                </div>
-
-                <div class="row justify-content-md-center">    
-                    <div class="col-lg-4">
-                        <p style="font-weight: 700;">Design</p>
-                        <ul>
-                            <li>Adobe After Effects</li>
-                            <li>Adobe Illustrator</li>
-                            <li>Adobe InDesign</li>
-                            <li>Adobe Photoshop</li>
-                            <li>Figma</li>
-                            <li>G Suite</li>
-                            <li>Maxon Cinema 4D</li>
-                            <li>Microsoft Office</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <p style="font-weight: 700;">Programming</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <br>
-                <br>
-
-                <!-- --- Interests --- -->
-                <div class="row justify-content-md-center">
-                    <div class="col-lg-8">
-                        <h2>INTERESTS</h2>
-                        <ul>
-                            <li>App Design</li>
-                            <li>Branding</li>
-                            <li>Interaction Design</li>
-                            <li>Motion Graphics</li>
-                            <li>Promotion Design</li>
-                            <li>Video Game UI</li>
-                            <li>Web Design</li>
-                        </ul>
-
-                        <br>
-                        <br>
-
-                        <!-- --- Languages --- -->
-                        <h2>LANGUAGES</h2>
-                        <ul>
-                            <li>Native English</li>
-                            <li>Conversational Japanese</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </section>
+            </section>
+        </div>
 
         <footer>
-            <p><img src="img/heartIcon.svg" alt="<3"> Thank you so much for viewing my portfolio <img src="img/heartIcon.svg" alt="<3"></p>
-
-            <a href="#header">
-                <div id="scrollTopBtn">
-                    <p>BACK TO TOP</p>
-                </div>
-            </a>
-
-            <br>
-
-            <p style="font-weight: 300;"><a href="https://github.com/nmlopez360/nmlopez360.github.io" target="_blank">©Nicole Lopez 2021</a></p>
+            <p style="float: left;">Thank you for viewing my portfolio! <img id="footerHeart" src="img/branding/Heart.svg"></p>
+            <p style="float: right;">©Nicole Lopez 2023</p>
         </footer>
 
 	</body>

@@ -1,25 +1,3 @@
-window.onscroll = function (e) {
-    if(window.pageYOffset > 0) {
-        document.getElementById('headerContent').style.opacity = 0;
-        document.getElementById('scrollDownAni').style.opacity = 0;
-        document.getElementById('headerBKG').style.height = 100 + 'px';
-        document.getElementById('headerBKG').style.top = -100 + 'px';
-        document.getElementById('headerBKG').style.zIndex = 98;
-        $('.navLink').addClass('whiteLinkHover');
-    }
-    else {
-        $('.navLink').removeClass('whiteLinkHover');
-        document.getElementById('headerBKG').style.height = 300 + 'px';
-        document.getElementById('headerBKG').style.top = 0 + 'px';
-        document.getElementById('headerBKG').style.zIndex = 0;
-        setTimeout(function () {
-            document.getElementById('headerContent').style.opacity = 1;
-            document.getElementById('scrollDownAni').style.opacity = 1;
-        }, 150);
-    }
-}
-
-
 $(document).ready(function()
 {
     $("#gsoImg").hover(

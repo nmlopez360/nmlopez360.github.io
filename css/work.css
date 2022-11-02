@@ -1,0 +1,237 @@
+/*
+White: #fbfbfb
+Black: #222
+Pink: #F77F64
+
+font-weight: 300;
+font-weight: 400;
+font-weight: 700;
+
+-moz-transition: all 0.3s ease-in-out 0s;
+-ms-transition: all 0.3s ease-in-out 0s;
+-o-transition: all 0.3s ease-in-out 0s;
+-webkit-transition: all 0.3s ease-in-out 0s;
+transition: all 0.3s ease-in-out 0s;
+
+box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.2);
+
+@media screen and (orientation: portrait){
+}
+
+@media screen and (max-width: _px){
+}
+
+*/
+
+
+/* ----- Page Style ----- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    background-color: #fbfbfb;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 160px 60px 0px 60px;
+}
+
+.contentColumn {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 40vw;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.contentColumn a {
+    text-decoration: underline !important;
+    color: #F77F64 !important;
+}
+
+
+/* ----- Type Styles ----- */
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #F77F64;
+}
+
+p {
+    font-size: 1em;
+    font-weight: 400;
+    color: #777;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----- Border Style ----- */
+#border {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    outline: 3px solid #222;
+    outline-offset: -40px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+#borderSparkle {
+    position: fixed;
+    width: 40px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: 0 auto;
+    z-index: 9;
+}
+
+/* ----- NavBar Style ----- */
+#nmlIcon {
+    width: 50px;
+    box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, 0.1);
+
+    -moz-transition: transform 0.3s ease-in-out 0s;
+    -ms-transition: transform 0.3s ease-in-out 0s;
+    -o-transition: transform 0.3s ease-in-out 0s;
+    -webkit-transition: transform 0.3s ease-in-out 0s;
+    transition: transform 0.3s ease-in-out 0s;
+}
+
+#nmlIcon:hover {
+    transform: scale(1.1);
+}
+
+#topBar {
+    position: fixed;
+    top: 0px;
+    height: 40px;
+    width: 100vw;
+    background-color: #fbfbfb;
+    z-index:99;
+}
+
+nav {
+    position: fixed;
+    margin: 37px 37px 0px 37px;
+    padding: 0px 15px 0px 5px;
+    width: calc(100vw - 74px);
+    height: 90px;
+    background-color: #fbfbfb;
+    border-left: 3px solid #222;
+    border-top: 3px solid #222;
+    border-right: 3px solid #222;
+    z-index: 999;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    padding: 14px 16px;
+
+    text-decoration: none;
+    text-align: center;
+    font-size: .8em;
+    font-weight: 700;
+    color: #222;
+    line-height: 5;
+
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav li a:hover {
+    font-weight: 700;
+    color: #F77F64;
+    transform: scale(1.1);
+}
+
+.navSlash {
+    font-size: 1.2em;
+    font-weight: 200;
+    line-height: 4.8;
+}
+
+/* ----- Header Style ----- */
+header {
+    width: 100%;
+    padding: 160px 60px 0px 60px;
+    background-color: #fbfbfb;
+}
+
+/* ----- Footer Style ----- */
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 37px;
+    padding: 7px 40px;
+    z-index: 8;
+    background-color: #fbfbfb;
+}
+
+footer p {
+    font-size: .8em;
+    font-weight: 700;
+}
+
+#footerHeart {
+    width: 15px;
+    margin-bottom: 3px;
+}
+
+@media screen and (max-width: 560px){
+    #borderSparkle {
+        width: 30px;
+        bottom: 18px;
+
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -ms-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    footer p {
+        font-size: .6em;
+
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -ms-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+}
