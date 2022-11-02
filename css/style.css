@@ -92,8 +92,8 @@ a {
 /* ----- Border Style ----- */
 #border {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     outline: 3px solid #222;
     outline-offset: -40px;
     overflow-y: scroll;
