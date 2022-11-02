@@ -44,6 +44,7 @@ section {
     min-height: 100vh;
     margin-top: -120px;
     padding: 160px 60px 0px 60px;
+    vertical-align: auto;
 }
 
 .contentColumn {
@@ -204,11 +205,12 @@ header {
     margin: auto;
     width: 40vw;
     min-width: 350px;
-    max-width: 600px;
+    max-width: 650px;
 }
 
 /* ----- Work Section Style ----- */
 #work {
+    padding-top: calc(50vh - (.5 * 30vw));
     height: auto !important;
 }
 
@@ -423,6 +425,10 @@ footer p {
 }
 
 @media screen and (max-width: 1025px){
+    #work {
+        padding-top: 160px;
+    }
+
     .workImg {
         width: calc(10vw * 1.2);
         height: calc(25vw * 1.2);
@@ -479,5 +485,59 @@ footer p {
         -o-transition: all 0.3s ease-in-out 0s;
         -webkit-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
+    }
+
+    #footerHeart {
+        width: 12px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .contentColumn {
+        min-width: 200px;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    #nmlIcon {
+        width: 30px;
+    }
+
+    nav li a {
+        padding: 12px 5px 10px 10px;
+        font-size: .6em;
+        line-height: 3.5;
+    }
+
+    .navSlash {
+        font-size: 1em;
+        line-height: 3.4;
+    }
+
+    #nmlIntro {
+        min-width: 200px;
+    }
+
+    #flipSide {
+        width: 180px;
+        height: 55px;
+        font-size: .7em;
+    }
+
+    #resumePDF {
+        width: 180px;
+        height: 55px;
+        font-size: .7em;
+    }
+
+    footer p {
+        margin: 0px -3px;
+        font-size: .415em;
+    }
+
+    #footerHeart {
+        width: 6px;
     }
 }

@@ -234,4 +234,46 @@ footer p {
         -webkit-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
     }
+
+    #footerHeart {
+        width: 12px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .contentColumn {
+        min-width: 200px;
+    }
+
+    nav {
+        height: 60px;
+    }
+
+    #nmlIcon {
+        width: 30px;
+    }
+
+    nav li a {
+        padding: 12px 5px 10px 10px;
+        font-size: .6em;
+        line-height: 3.5;
+    }
+
+    .navSlash {
+        font-size: 1em;
+        line-height: 3.4;
+    }
+
+    #nmlIntro {
+        min-width: 200px;
+    }
+    
+    footer p {
+        margin: 0px -3px;
+        font-size: .415em;
+    }
+
+    #footerHeart {
+        width: 6px;
+    }
 }
