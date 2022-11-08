@@ -6,9 +6,11 @@
 
 ## Introduction
 Hi, I'm **Nicole Lopez**!
-I am a Visual & Interactive Designer who aims to spread happiness through design!
+I am a Marketing & Interactive Designer who aims to spread happiness through design!
 
-I'm a recent graduate of Rochester Institute of Technology and I majored in New Media Design student with minors in Game Design and the Japanese Language. I'm currently searching for a full-time position in a design field starting in summer or fall 2021!
+I’ve been working at Playdots, a mobile game company under Zynga and Take-Two Interactive, as a marketing designer. Before that, I was graduated from Rochester Institute of Technology in 2021 where I studied New Media Design with minors in the Japanese language as well as Game Design.
+
+**I'm searching for a new full-time position in the field of design and am available to start in January 2023.**
 
 Whether it’s logos, posters, animations, websites, applications, or games, I have a strong passion to design. My main goal is to create designs that make people happy! In other words, I want to design things that bring enjoyment to others by making things more usable, making things more fun, and of course, making things look more beautiful.
 
