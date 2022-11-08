@@ -193,6 +193,8 @@ nav li a:hover {
 header {
     width: 100%;
     height: 100vh;
+    min-height: 500px;
+    margin-bottom: 100px;
     background-color: #fbfbfb;
 }
 
@@ -217,7 +219,7 @@ header {
 #work h2 {
     width: 10vw;
     text-align: center;
-    color: #F77F64;
+    color: #222;
 }
 
 #work ul {
@@ -232,6 +234,18 @@ header {
     display: inline-block;
     vertical-align: top;
     margin: 15px;
+}
+
+#work ul li h2 {
+    -moz-transition: color 0.3s ease-in-out 0s;
+    -ms-transition: color 0.3s ease-in-out 0s;
+    -o-transition: color 0.3s ease-in-out 0s;
+    -webkit-transition: color 0.3s ease-in-out 0s;
+    transition: color 0.3s ease-in-out 0s;
+}
+
+#work ul li h2:hover {
+    color: #222;
 }
 
 .workImg {
@@ -258,13 +272,13 @@ header {
 
 
 #twoDots {
-    background-image: url(/img/workPreviews/workPreview_TwoDots-COMINGSOON.png);
+    background-image: url(/img/workPreviews/workPreview_TwoDots.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-#orchestra {
+#symphony {
     background-image: url(/img/workPreviews/workPreview_AotSO-COMINGSOON.png);
     background-size: cover;
     background-position: center;
@@ -272,14 +286,14 @@ header {
 }
 
 #ritGSO {
-    background-image: url(/img/workPreviews/workPreview_RITGSO-COMINGSOON.png);
+    background-image: url(/img/workPreviews/workPreview_RITGSO.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #mandala {
-    background-image: url(/img/workPreviews/workPreview_Mandala-COMINGSOON.png);
+    background-image: url(/img/workPreviews/workPreview_Mandala.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -295,6 +309,23 @@ header {
 
 
 
+
+#work ul li ul {
+    width: 10vw;
+}
+
+#work ul li ul li {
+    float: center;
+    margin: 4px;
+    padding: 2px 8px;
+    border: 2px solid #F77F64;
+
+    text-align: center;
+    font-size: .6em;
+    font-weight: 700;
+    color: #F77F64 !important;
+    line-height: 2;
+}
 
 #flipSide {
     margin: 80px auto 40px auto;
@@ -336,13 +367,8 @@ header {
     margin-bottom: -40px;
 }
 
-#nmlPfp {
-    position: relative;
-    top: 0px;
-    bottom: 0px;
-    margin-right: 20px;
-    height: 90px;
-    float: left;
+#nmlPhoto {
+    width: 100%;
 }
 
 /* ----- Resume Section Style ----- */
@@ -434,6 +460,10 @@ footer p {
         height: calc(25vw * 1.2);
     }
 
+    #work ul li ul {
+        width: calc(10vw * 1.2);
+    }
+
     #work h2 {
         font-size: .8em;
     }
@@ -447,6 +477,10 @@ footer p {
     .workImg {
         width: calc(10vw * 1.7);
         height: calc(25vw * 1.7);
+    }
+
+    #work ul li ul {
+        width: calc(10vw * 1.7);
     }
 
     #work h2 {
@@ -470,6 +504,10 @@ footer p {
     .workImg {
         width: calc(10vw * 3.2);
         height: calc(25vw * 3.2);
+    }
+
+    #work ul li ul {
+        width: calc(10vw * 3.2);
     }
 
     #work h2 {

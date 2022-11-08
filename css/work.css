@@ -40,7 +40,8 @@ body {
 }
 
 section {
-    padding: 160px 60px 0px 60px;
+    margin-bottom: 100px;
+    padding: 80px 60px 0px 60px;
 }
 
 .contentColumn {
@@ -48,13 +49,23 @@ section {
     right: 0;
     margin: 0 auto;
     width: 40vw;
-    max-width: 600px;
+    max-width: 800px;
     min-width: 300px;
 }
 
 .contentColumn a {
     text-decoration: underline !important;
     color: #F77F64 !important;
+}
+
+#sectionDivider {
+    display: block;
+    margin: 0 auto -10px auto;
+    width: 20vw;
+    max-width: 400px;
+    min-width: 150px;
+    height: 40px;
+    border-bottom: 1px solid #222;
 }
 
 
@@ -65,8 +76,9 @@ h1 {
 }
 
 h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 700;
+    color: #222;
 }
 
 h3 {
@@ -192,6 +204,100 @@ header {
     background-color: #fbfbfb;
 }
 
+.mockup {
+    display: inline-block;
+    width: calc(20vw - 20px);
+    max-width: 380px;
+    margin: 12px 8px;
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- Project Details Style ----- */
+#projectDetails {
+    margin-bottom: 0px;
+}
+
+#projectDetails .contentColumn {
+    height: auto;
+    padding: 40px;
+    border: 3px solid #222;
+}
+
+#projectDetails .contentColumn ul {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: -35px;
+}
+
+#projectDetails .contentColumn ul li {
+    float: left;
+    margin: 4px;
+    padding: 2px 8px;
+    border: 2px solid #F77F64;
+
+    text-align: center;
+    font-size: .6em;
+    font-weight: 700;
+    color: #F77F64 !important;
+    line-height: 2;
+}
+
+/* ----- Project Explained Style ----- */
+#projectExplained {
+    margin-bottom: 0px;
+}
+
+.twoDotsThumbnailSet {
+    display: block;
+    margin: 0 auto;
+}
+
+.twoDotsThumbnail {
+    display: inline-block;
+    width: calc(33% - 24px);
+    max-width: 266px;
+    margin: 12px 8px;
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- View More Style ----- */
+#viewMore {
+    margin-bottom: 100px;
+}
+
+#viewMore ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#viewMore li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+}
+
+.workMiniPreview {
+    width: 8vw;
+    max-width: 8vw;
+    outline: 3px solid #222;
+    outline-offset: 8px;
+
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -ms-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.workMiniPreview:hover {
+    transform: scale(1.03);
+    outline: 3px solid #222;
+    outline-offset: 0px;;
+}
+
 /* ----- Footer Style ----- */
 footer {
     position: fixed;
@@ -211,6 +317,24 @@ footer p {
 #footerHeart {
     width: 15px;
     margin-bottom: 3px;
+}
+
+@media screen and (max-width: 1689px){
+    .workMiniPreview {
+        width: 6vw;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .mockup {
+        width: 100%;
+    }
+
+    .workMiniPreview {
+        width: 40vw;
+        min-width: 150px;
+    }
 }
 
 @media screen and (max-width: 560px){
@@ -264,10 +388,6 @@ footer p {
         line-height: 3.4;
     }
 
-    #nmlIntro {
-        min-width: 200px;
-    }
-    
     footer p {
         margin: 0px -3px;
         font-size: .415em;
